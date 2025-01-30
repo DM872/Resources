@@ -1,6 +1,5 @@
-#### Unit 8 (MC) --- Matheuristics
+## Unit 8 (MC) --- Stochastic Programming
 
-Weeks 16,17
 
 - Stochastic Programming
 - Stochastic Programming for Timetabling

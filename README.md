@@ -15,14 +15,16 @@ This repository contains resources for the course DM872:
 
 ## Contents and Teaching Plan
 
-- Unit 1 --- Mixed Integer Linear Programming Recap
-- Unit 2 --- Traveling Salesman Problem
-- Unit 3 --- Vehicle Routing
-- Unit 4 --- Lagrangian Relaxation
-- Unit 5 --- Column Generation
-- Unit 6 --- Applications
-- Unit 7 --- Matheuristics
-- Unit 8 --- Matheuristics
-- Unit 9 --- Fairness
-- Unit 10 --- Machine Learning
+| Unit | Content                                | Teacher | Weeks |
+|  --- | ---                                    | ---     | ---   |
+|    1 | Mixed Integer Linear Programming Recap | MC      | 6,7   |
+|    2 | Traveling Salesman Problem             | KP      | 8.9   |
+|    3 | Vehicle Routing                        | KP      | 10    |
+|    4 | Lagrangian Relaxation                  | MC      | 11,12 |
+|    5 | Column Generation                      | MC      | 12,13 |
+|    6 | Applications                           | MC      | 14,15 |
+|    7 | Matheuristics                          | MC      | 15    |
+|    8 | Matheuristics                          | MC      | 16,17 |
+|    9 | Fairness                               | MC      | 18    |
+|   10 | Machine Learning                       | MC      | -     |
 

@@ -1,4 +1,4 @@
-#### Unit 2 (KP) --- Traveling Salesman Problem
+## Unit 2 (KP) --- Traveling Salesman Problem
 
 Weeks 8 and 9
 
