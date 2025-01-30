@@ -8,26 +8,25 @@ This repository contains resources for the course DM872:
   [Konstantin Pavlikov](https://portal.findresearcher.sdu.dk/en/persons/kop) (KP)
 - [Schedule](https://skemaplan.sdu.dk/N340032101/f25)
   [alternative view](./schedule.png)
-- [Literature](references.md)
 - Assessment:
     - Ordinary exam: two assignments during the course
     - Reexam: assignments in August 2025
 
 
-## Contents and Teaching Plan
+### Contents and Teaching Plan
 
-** Week 6 (MC) **
+**Week 6 (MC)**
 
 - Introduction, Farkas, Interior Point Methods
 - LP Practical Guidelines,  Sifting
 - Practice 
 
 
-*** Week 7 (MC) ***
+**Week 7 (MC)**
 
 - MILP Practical Guidelines; Presolving; Modeling 
 
-*** Week 8 (KP) ***
+**Week 8 (KP)**
 
 - MILP Formulations for Traveling Salesman Problem
 - Cutting planes for TSP
@@ -45,7 +44,7 @@ This repository contains resources for the course DM872:
 
 
 
-# References
+### References
 
 - [KN1] Ed Klotz, Alexandra M. Newman. [Practical guidelines for solving
   difficult linear
