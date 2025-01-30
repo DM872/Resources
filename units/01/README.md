@@ -1,13 +1,15 @@
 ## Unit 1 (MC) --- Mixed Integer Linear Programming Recap
 
-Weeks 6 and 7
-
-- Introduction, Farkas, Interior Point Methods
-- LP Practical Guidelines,  Sifting
-- Practice 
+- Course Introduction
+- Farkas 
+- Interior Point Methods
+- LP Practical Guidelines,  
+- Sifting
 - MILP Practical Guidelines
 - Presolving
 - Modeling 
+- Practice 
+
 
 ## References
 
@@ -51,5 +53,3 @@ Weeks 6 and 7
 - [Wi] H.P. Williams. [Model building in mathematical
   programming](http://site.ebrary.com.proxy1-bib.sdu.dk:2048/lib/sdub/detail.action?docID=10657847). John
   Wiley & Sons, Chichester, Fifth Edition, 2013
-
-- To be continued
