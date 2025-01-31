@@ -1,10 +1,3 @@
----
-layout: default #Do not change.
-title: "MILP Software" #Article title.
-date:   2023-03-09 14:02:54 +0200
-author: marco #Author's nick.
----
-
 
 # Solving MILP Problems in Python
 

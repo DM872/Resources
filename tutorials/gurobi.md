@@ -1,12 +1,3 @@
----
-layout: default #Do not change.
-title: Gurobi #Article title.
-date:   2023-03-09 14:02:54 +0200
-author: marco #Author's nick.
-nav_order: 5
-nav_exclude: true
----
-
 
 ## Installation of Gurobi
 
