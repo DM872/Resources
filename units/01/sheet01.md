@@ -22,7 +22,7 @@ $$
 \end{array}
 $$
 
-using as starting solution $[x_1, x_2, x_3]=[1, 3/2, 1/4]$.
+using as starting solution $[x_1, x_2, x_3]=[1, 3\/2, 1\/4]$.
 
 How should the algorithm change if the problem was a minimization problem?
 
