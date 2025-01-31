@@ -1,7 +1,6 @@
 
 ## Installation of Gurobi
 
-
 - Download from <https://www.gurobi.com/downloads/>
 
 - Register to get an academic
@@ -37,10 +36,11 @@
 ## Recommended documentation material
 
 
-Gurobi has an excellent
-[documentation](https://www.gurobi.com/resources/?category-filter=documentation),
-which it may appear overwhelming. Here is a list of recommended material:
+- Gurobi has an excellent [documentation](https://docs.gurobi.com/current/).
 
+ Here is a list of recommended material:
+
+<!--
 -   you can get an introduction to modeling in Python with gurobi
     watching at least the first 34 minutes of this video: [Python I:
     Introduction to modeling with
@@ -57,3 +57,11 @@ which it may appear overwhelming. Here is a list of recommended material:
 
 -   [the Application Program Interface
     (API)](http://www.gurobi.com/documentation/current/refman/py_python_api_details.html).
+
+-->
+
+-   Solving MILP Problems in Python with Gurobi: [Modelling 1](https://www.gurobi.com/pdfs/user-events/2017-frankfurt/Modeling-1.pdf); [Modelling 2](https://www.gurobi.com/pdfs/user-events/2017-frankfurt/Modeling-2.pdf);
+[Algorithms 1](https://assets.gurobi.com/pdfs/user-events/2017-frankfurt/Algorithms-I.pdf);
+[Algorithms 2](https://assets.gurobi.com/pdfs/user-events/2017-frankfurt/Algorithms-II.pdf)
+
+- The gurobi github [modeling-examples](https://github.com/Gurobi/modeling-examples) repository.

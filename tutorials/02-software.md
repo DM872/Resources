@@ -39,32 +39,37 @@ makes available a library to pass models to the solver. It is not a
 mathematical programming language but the library is very light and
 similar to a modelling language.
 
-You can work on your own laptop, in which case it is enough to install
-the software there. Alternatively, you can use the
-[IMADA Virtual Computer Lab](https://imada.sdu.dk/u/jlandersen/imada/it/complab.html#imada-comp-lab). In
-this latter case you will have to install the software in your IMADA
-home directory.
-
-We will consider the following alternatives:
+You may consider the following Python API alternatives:
 
 - [gurobipy](https://support.gurobi.com)
   Gurobi Python interface to their solver (commercial)
 - [Python-MIP](https://github.com/coin-or/python-mip) interface for CBC (free) and Gurobi (commercial)
 - [PySCIPOpt](https://github.com/scipopt/PySCIPOpt) interface for SCIP (free)
-
-
-
+- [Pyomo](https://pyomo.org) with interface for several solvers commercial and not
+- [PuLP](https://github.com/coin-or/pulp) with interface to most of the
+   high performing solvers.
+   [Documentation](https://coin-or.github.io/pulp/). [Article at Towards Data Science](https://towardsdatascience.com/basic-linear-programming-in-python-with-pulp-d398d144802b).
+- [SciPy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html)
+  for problems already in matrix form.
 
 ## Preparation
 
-You can use Google CoLabs and execute the code online. However, it is recommended to set up a local working environment
-with the following steps:
+You can use Google CoLabs and execute the code online. However, it is
+recommended to set up a local working environment.
 
-- If your operating system is Windows then install the Windows Subsystem
-  for Linux (WSL) and work from the shell.
+- You can work on your own laptop, in which case it is enough to install the
+software there. Alternatively, you can use the [IMADA Virtual Computer
+Lab](https://imada.sdu.dk/u/jlandersen/imada/it/complab.html#imada-comp-lab). In
+this latter case you will have to install the software in your IMADA home
+directory.
+
+- If your operating system is Windows then install the Windows Subsystem for Linux
+  (WSL) and work from the shell.
 
 - Ensure you have at least Python 3.10 installed otherwise install it
-  <http://python.org/download/>.
+<http://python.org/download/>. Consider using
+[]`pyenv`](https://github.com/pyenv/pyenv) that makes it easier to handle python
+versions. 
    
 - Choose and prepare your favourite Python Integrated Development Environment (IDE): For example:
   - [VS Code](https://code.visualstudio.com/docs/python/python-tutorial) (recommended), Spyder3, Emacs, Eclipse, etc. 
@@ -96,9 +101,8 @@ with the following steps:
     section Requirements. Consult the
     [documentation](https://scipopt.github.io/PySCIPOpt/docs/html/).
 
-We assume that you have previous knowledge of Python programming (a
-couple of links to review Python programming are available from the
-course Web Page).
+  - Alternatively, for Pyomo and Pulp follow the instructions at their webpages.
+
 
 In the remaining part of this document you will be guided through some
 elements of the course revisited with the use of software. Although the
