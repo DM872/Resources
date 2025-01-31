@@ -36,9 +36,13 @@
 ## Recommended documentation material
 
 
+- Solving MILP Problems in Python with Gurobi: [Modelling 1](https://www.gurobi.com/pdfs/user-events/2017-frankfurt/Modeling-1.pdf); [Modelling 2](https://www.gurobi.com/pdfs/user-events/2017-frankfurt/Modeling-2.pdf);
+[Algorithms 1](https://assets.gurobi.com/pdfs/user-events/2017-frankfurt/Algorithms-I.pdf);
+[Algorithms 2](https://assets.gurobi.com/pdfs/user-events/2017-frankfurt/Algorithms-II.pdf)
+
 - Gurobi has an excellent [documentation](https://docs.gurobi.com/current/).
 
- Here is a list of recommended material:
+- The gurobi github [modeling-examples](https://github.com/Gurobi/modeling-examples) repository.
 
 <!--
 -   you can get an introduction to modeling in Python with gurobi
@@ -60,8 +64,3 @@
 
 -->
 
--   Solving MILP Problems in Python with Gurobi: [Modelling 1](https://www.gurobi.com/pdfs/user-events/2017-frankfurt/Modeling-1.pdf); [Modelling 2](https://www.gurobi.com/pdfs/user-events/2017-frankfurt/Modeling-2.pdf);
-[Algorithms 1](https://assets.gurobi.com/pdfs/user-events/2017-frankfurt/Algorithms-I.pdf);
-[Algorithms 2](https://assets.gurobi.com/pdfs/user-events/2017-frankfurt/Algorithms-II.pdf)
-
-- The gurobi github [modeling-examples](https://github.com/Gurobi/modeling-examples) repository.
