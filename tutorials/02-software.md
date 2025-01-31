@@ -78,15 +78,7 @@ versions.
 
 - Choose one of the following:
 
-  - Install `gurobipy` (easiest alternative). Follow these
-    [guidelines](https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python-). The
-    recommended installation is via `pip`.  This should install also
-    gurobi. To make it work you need also a license from the gurobi web
-    page. You could use the tools from
-    [here](https://support.gurobi.com/hc/en-us/articles/360059842732)
-    and register at the [gurobi page](https://www.gurobi.com) to get
-    the license. See also this local page of [guidelines](../gurobi/)
-    for a full installation and documentation of gurobi.
+  - If you have chosen to use `gurobipy` then follow these [instructions](./03-gurobi.md).
 
   - Alternatively, install Python-MIP with `pip install mip` this should install also
     the solver CBC. If you want to work with gurobi follow these local
