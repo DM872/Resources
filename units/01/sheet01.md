@@ -1,12 +1,12 @@
-## Sheet 1
+# Sheet 1
 
 
-### Task 1
+## Task 1
 
 Solve some of the troublesome problems from [KN1] with Gurobi and other solvers
 (soplex, glpsol) and analyze the logs.
 
-### Task 2
+## Task 2
 
 Reconsider the example used to illustrate the interior-point algorithm in Sec.
 8.4 of [HL] (file `HL_sec_8_4.pdf`). Suppose that $(x1, x2) = (1, 3)$ were used
@@ -26,7 +26,7 @@ using as starting solution $[x_1, x_2, x_3]=[1, 3\/2, 1\/4]$.
 
 How should the algorithm change if the problem was a minimization problem?
 
-### Task 3
+## Task 3
 
 <!--
 A person infected with Coronavirus is located at one node $p$ in a
