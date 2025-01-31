@@ -1,31 +1,23 @@
----
-layout: default
-mathjax: true
-title:  Sheet 1
-date:   2021-03-31 09:33:19 +0100
-categories: exercises 
----
-
-
-
 ## Sheet 1
 
 
+### Task 1
 
+Solve some of the troublesome problems from [KN1] with Gurobi and other solvers
+(soplex, glpsol) and analyze the logs.
 
+### Task 2
 
-#### Task 1
-
-Reconsider the example used to illustrate the interior-point algorithm
-in Sec. 8.4 of [HL] (you find the section in ItsLearning under
-Resources). Suppose that $(x1, x2) = (1, 3)$ were used instead as the
-initial feasible trial solution. Perform one or two iterations manually,
-starting from this solution. Then, write a python script to automatize the process. Finally solve this problem:
+Reconsider the example used to illustrate the interior-point algorithm in Sec.
+8.4 of [HL] (file `HL_sec_8_4.pdf`). Suppose that $(x1, x2) = (1, 3)$ were used
+as the initial feasible trial solution.  Perform one or two iterations using
+`numpy`, starting from this solution. Then, write a python script to automatize
+the process. Finally, solve this problem:
 
 $$
 \begin{array}{rl}
-\text{maximize} \;\;&2x_1 + 3x_2 + 2x_3 \\
-\text{subject to} \; \; &x_1 + x_2 +2x_3 = 3\\
+\text{maximize} \\;\\;&2x_1 + 3x_2 + 2x_3 \\
+\text{subject to} \\; \\; &x_1 + x_2 +2x_3 = 3\\
 &x_1,x_2,x_3 \geq 0.
 \end{array}
 $$
@@ -34,16 +26,7 @@ using as starting solution $[x_1, x_2, x_3]=[1, 3/2, 1/4]$.
 
 How should the algorithm change if the problem was a minimization problem?
 
-
-
-
-#### Task 2
-
-Solve some of the problems from [KN1] with Gurobi and other solvers
-(soplex, glpsol) and analyze the logs.
-
-
-#### Task 3
+### Task 3
 
 <!--
 A person infected with Coronavirus is located at one node $p$ in a
