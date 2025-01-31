@@ -116,15 +116,9 @@ model.
 
 Continue this tutorial with the hands on parts:
 
-- gurobipy:
-  [Part 1](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_1.ipynb)
-  and
-  [Part 2](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_2.ipynb)
+- gurobipy: [Part 1](./labs/lab_gurobi_1.ipynb) and  [Part 2](./labs/lab_gurobi_2.ipynb) of this tutorial.
+
+- python-mip:  [Part 1](./labs/lab_mip_1.ipynb) and [Part 2](./labs/lab_mip_2.ipynb)
   of this tutorial.
 
-- python-mip:  [Part 1](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_mip_1.ipynb)
-  and
-  [Part 2](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_mip_2.ipynb)
-  of this tutorial.
-
-- pyscipopt: [Part 1](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_scip_1.ipynb) and [Part 2](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_scip_2.ipynb)
+- pyscipopt: [Part 1](./labs/lab_scip_1.ipynb) and [Part 2](./labs/lab_scip_2.ipynb)
