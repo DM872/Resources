@@ -39,32 +39,37 @@ makes available a library to pass models to the solver. It is not a
 mathematical programming language but the library is very light and
 similar to a modelling language.
 
-You can work on your own laptop, in which case it is enough to install
-the software there. Alternatively, you can use the
-[IMADA Virtual Computer Lab](https://imada.sdu.dk/u/jlandersen/imada/it/complab.html#imada-comp-lab). In
-this latter case you will have to install the software in your IMADA
-home directory.
-
-We will consider the following alternatives:
+You may consider the following Python API alternatives:
 
 - [gurobipy](https://support.gurobi.com)
   Gurobi Python interface to their solver (commercial)
 - [Python-MIP](https://github.com/coin-or/python-mip) interface for CBC (free) and Gurobi (commercial)
 - [PySCIPOpt](https://github.com/scipopt/PySCIPOpt) interface for SCIP (free)
-
-
-
+- [Pyomo](https://pyomo.org) with interface for several solvers commercial and not
+- [PuLP](https://github.com/coin-or/pulp) with interface to most of the
+   high performing solvers.
+   [Documentation](https://coin-or.github.io/pulp/). [Article at Towards Data Science](https://towardsdatascience.com/basic-linear-programming-in-python-with-pulp-d398d144802b).
+- [SciPy](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linprog.html)
+  for problems already in matrix form.
 
 ## Preparation
 
-You can use Google CoLabs and execute the code online. However, it is recommended to set up a local working environment
-with the following steps:
+You can use Google CoLabs and execute the code online. However, it is
+recommended to set up a local working environment.
 
-- If your operating system is Windows then install the Windows Subsystem
-  for Linux (WSL) and work from the shell.
+- You can work on your own laptop, in which case it is enough to install the
+software there. Alternatively, you can use the [IMADA Virtual Computer
+Lab](https://imada.sdu.dk/u/jlandersen/imada/it/complab.html#imada-comp-lab). In
+this latter case you will have to install the software in your IMADA home
+directory.
+
+- If your operating system is Windows then install the Windows Subsystem for Linux
+  (WSL) and work from the shell.
 
 - Ensure you have at least Python 3.10 installed otherwise install it
-  <http://python.org/download/>.
+<http://python.org/download/>. Consider using
+[]`pyenv`](https://github.com/pyenv/pyenv) that makes it easier to handle python
+versions. 
    
 - Choose and prepare your favourite Python Integrated Development Environment (IDE): For example:
   - [VS Code](https://code.visualstudio.com/docs/python/python-tutorial) (recommended), Spyder3, Emacs, Eclipse, etc. 
@@ -73,15 +78,7 @@ with the following steps:
 
 - Choose one of the following:
 
-  - Install `gurobipy` (easiest alternative). Follow these
-    [guidelines](https://support.gurobi.com/hc/en-us/articles/360044290292-How-do-I-install-Gurobi-for-Python-). The
-    recommended installation is via `pip`.  This should install also
-    gurobi. To make it work you need also a license from the gurobi web
-    page. You could use the tools from
-    [here](https://support.gurobi.com/hc/en-us/articles/360059842732)
-    and register at the [gurobi page](https://www.gurobi.com) to get
-    the license. See also this local page of [guidelines](../gurobi/)
-    for a full installation and documentation of gurobi.
+  - If you have chosen to use `gurobipy` then follow these [instructions](./03-gurobi.md).
 
   - Alternatively, install Python-MIP with `pip install mip` this should install also
     the solver CBC. If you want to work with gurobi follow these local
@@ -96,9 +93,8 @@ with the following steps:
     section Requirements. Consult the
     [documentation](https://scipopt.github.io/PySCIPOpt/docs/html/).
 
-We assume that you have previous knowledge of Python programming (a
-couple of links to review Python programming are available from the
-course Web Page).
+  - Alternatively, for Pyomo and Pulp follow the instructions at their webpages.
+
 
 In the remaining part of this document you will be guided through some
 elements of the course revisited with the use of software. Although the
@@ -112,15 +108,9 @@ model.
 
 Continue this tutorial with the hands on parts:
 
-- gurobipy:
-  [Part 1](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_1.ipynb)
-  and
-  [Part 2](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_gurobi_2.ipynb)
+- gurobipy: [Part 1](./labs/lab_gurobi_1.ipynb) and  [Part 2](./labs/lab_gurobi_2.ipynb) of this tutorial.
+
+- python-mip:  [Part 1](./labs/lab_mip_1.ipynb) and [Part 2](./labs/lab_mip_2.ipynb)
   of this tutorial.
 
-- python-mip:  [Part 1](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_mip_1.ipynb)
-  and
-  [Part 2](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_mip_2.ipynb)
-  of this tutorial.
-
-- pyscipopt: [Part 1](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_scip_1.ipynb) and [Part 2](https://github.com/DM871/dm871.github.io/blob/main/notebooks/lab_scip_2.ipynb)
+- pyscipopt: [Part 1](./labs/lab_scip_1.ipynb) and [Part 2](./labs/lab_scip_2.ipynb)
