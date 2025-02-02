@@ -9,8 +9,8 @@ A Python version above 3.10 is recommended for this course. Consider using `pyen
 
 - More on Python: 
 
-  - [Part 1](https://dm561.github.io/assets/dm561-lec1.pdf): basics, built-in
+  - [Part 1](https://dm587.github.io/assets/dm587-lec1.pdf): basics, built-in
     data types, control flow, std library, packages OO programming, type annotations
-  - [Part 2](https://dm561.github.io/assets/dm561-lec2.pdf): exceptions, file i/o, numpy
-  - [Part 3](https://dm561.github.io/assets/dm561-lec3.pdf): graphics, data viz,
+  - [Part 2](https://dm587.github.io/assets/dm587-lec3.pdf): exceptions, file i/o, numpy
+  - [Part 3](https://dm587.github.io/assets/dm587-lec3.pdf): graphics, data viz,
     networks, pandas
