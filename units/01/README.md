@@ -1,10 +1,11 @@
 ## Unit 1 (MC) --- Mixed Integer Linear Programming Recap
 
-- Course Introduction
+- Course Introduction (slides-intro)
 - Farkas 
-- Interior Point Methods
-- LP Practical Guidelines,  
-- Sifting
+- Interior Point Methods (slides-affine)
+- LP Practical Guidelines (klotz-LP, slides-klotz-LP)
+- Sifting (sifting)
+
 - MILP Practical Guidelines
 - Presolving
 - Modeling 
