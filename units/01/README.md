@@ -2,10 +2,11 @@
 
 - Course Introduction (slides-intro)
 - Farkas 
-- Interior Point Methods (slides-affine)
+- Interior Point Methods (slides-affine, HL_sc8_4.pdf)
 - LP Practical Guidelines (klotz-LP, slides-klotz-LP)
 - Sifting (sifting)
-
+***
+- Practice (sheet01)
 - MILP Practical Guidelines
 - Presolving
 - Modeling 
