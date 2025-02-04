@@ -53,3 +53,9 @@
 - [Wi] H.P. Williams. [Model building in mathematical
   programming](http://site.ebrary.com.proxy1-bib.sdu.dk:2048/lib/sdub/detail.action?docID=10657847). John
   Wiley & Sons, Chichester, Fifth Edition, 2013
+
+- [MOSEK Modeling Cookbook](https://docs.mosek.com/modeling-cookbook/index.html)
+
+- [Computational Optimization at Work at Zuse Institute Berlin, 2024](https://co-at-work.zib.de/#schedule)
+
+
