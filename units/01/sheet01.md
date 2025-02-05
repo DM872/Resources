@@ -1,10 +1,34 @@
 # Sheet 1
 
-
 ## Task 1
 
 Solve some of the troublesome problems from [KN1] with Gurobi and other solvers
 (soplex, glpsol) and analyze the logs.
+
+The
+following linear program provides an example of ill conditioning
+and round-off error in the input data:
+
+$$
+\begin{array}{rl}
+\text{maximize} \\;\\;&x_1 + x_2 \\
+\text{subject to} \\; \\; &\frac{1}{3}x_1 + \frac{2}{3}x_2 = 1\\
+&x_1+x_2=3 \\
+&x_1,x_2 \geq 0.
+\end{array}
+$$
+
+$$
+\begin{array}{rl}
+\text{maximize} \\;\\;&1\\
+\text{subject to} \\; \\; &-x_1+24x_2\leq 21\\
+&x_1\leq 3\\
+&x_2 \geq 1.00000008.
+\end{array}
+$$
+
+
+
 
 ## Task 2
 
@@ -43,9 +67,16 @@ time?
 Consider the [Feature Selection
 case](https://colab.research.google.com/github/Gurobi/modeling-examples/blob/master/linear_regression/l0_regression.ipynb).
 
-Implement the Lasso version together with minimizing the least absolute error. Solve the linear programming problem and analyze the solution process in the light of the article [KN1].
+Implement the Lasso version together with minimizing the least absolute error.
+Solve the linear programming problem and analyze the solution process in the
+light of the article [KN1].
 
-Implement the Lasso version (L1-norm as regularization component added to the objective function) together with minimizing the least absolute error instead of the square of residuals as done in the notebook. 
+Implement the Lasso version (L1-norm as regularization component added to the
+objective function) together with minimizing the least absolute error instead of
+the square of residuals as done in the notebook. 
 
-- Solve the linear programming problem in training and analyze the solution process in the light of the article [KN1]. 
-- Compare the accuracy of the L1-norm and the L0-norm approach presented in the document.
+- Solve the linear programming problem in training and analyze the solution
+  process in the light of the article [KN1]. 
+
+- Compare the accuracy of the L1-norm and the L0-norm approach presented in the
+  document.
