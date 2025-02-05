@@ -13,7 +13,7 @@ $$
 \begin{array}{rl}
 \text{maximize} \\;\\;&x_1 + x_2 \\
 \text{subject to} \\; \\; &\frac{1}{3}x_1 + \frac{2}{3}x_2 = 1\\
-&x_1+x_2=3 \\
+&x_1+2x_2=3 \\
 &x_1,x_2 \geq 0.
 \end{array}
 $$
