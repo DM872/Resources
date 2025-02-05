@@ -1,17 +1,20 @@
 ## Unit 1 (MC) --- Mixed Integer Linear Programming Recap
 
-- Course Introduction (slides-intro)
-- Farkas 
-- Interior Point Methods (slides-affine, HL_sc8_4.pdf)
-- LP Practical Guidelines (klotz-LP, slides-klotz-LP)
-- Sifting (sifting)
 ***
-- Practice (sheet01)
-- MILP Practical Guidelines
+Week 6:
+- Course Introduction (slides-intro)
+- Interior Point Methods (slides-affine, HL_sc8_4.pdf)
+- LP Practical Guidelines (klotz-LP.pdf, slides-klotz-LP.pdf)
+- Sifting (sifting.pdf)
+- Practice (sheet01.md, tasks 1 and 2, sheet01_sol.ipynb)
+***
+Week 7:
+- MILP Practical Guidelines (klotz-MIP.pdf, slides-klotz-MIP.pdf)
+- Farkas 
 - Presolving
 - Modeling 
-- Practice 
-
+- Practice (sheet01, task 3) 
+***
 
 ## References
 
