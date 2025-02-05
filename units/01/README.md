@@ -3,15 +3,16 @@
 ***
 Week 6:
 - Course Introduction (slides-intro)
-- Interior Point Methods (slides-affine, HL_sc8_4.pdf)
-- LP Practical Guidelines (klotz-LP.pdf, slides-klotz-LP.pdf)
-- Sifting (sifting.pdf)
+- Interior Point Methods (slides-affine, HL_sc8_4.pdf, [V, chp 21])
+- LP Practical Guidelines ([KN1] klotz-LP.pdf, slides-klotz-LP.pdf)
+- Sifting ([BGLMS] sifting.pdf)
 - Practice (sheet01.md, tasks 1 and 2, sheet01_sol.ipynb)
 ***
+
 Week 7:
-- MILP Practical Guidelines (klotz-MIP.pdf, slides-klotz-MIP.pdf)
-- Farkas 
-- Presolving
+- MILP Practical Guidelines ([KN2] klotz-MIP.pdf, slides-klotz-MIP.pdf)
+- Farkas (slides-fakas.pdf)
+- Presolving (slides, [ABGRW])
 - Modeling 
 - Practice (sheet01, task 3) 
 ***
