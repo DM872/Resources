@@ -12,7 +12,7 @@ Week 6:
 Week 7:
 - Farkas (slides-fakas.pdf, [A])
 - MILP Practical Guidelines ([KN2] klotz-MIP.pdf, slides-klotz-MIP.pdf)
-- Modeling 
+- Modeling (slides-modeling_2.pdf, [Wi, chp 3, 5])
 - Presolving (slides, [ABGRW])
 - Practice (sheet01, task 3) 
 ***
