@@ -18,7 +18,7 @@ This repository contains resources for the course DM872:
 | Unit | Content                                | Teacher | Weeks |
 |  --- | ---                                    | ---     | ---   |
 |    1 | Mixed Integer Linear Programming Recap | MC      | 6,7   |
-|    2 | Traveling Salesman Problem             | KP      | 8.9   |
+|    2 | Traveling Salesman Problem             | KP      | 8,9   |
 |    3 | Vehicle Routing                        | KP      | 10    |
 |    4 | Lagrangian Relaxation                  | MC      | 11,12 |
 |    5 | Column Generation                      | MC      | 12,13 |
