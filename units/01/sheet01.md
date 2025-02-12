@@ -128,28 +128,62 @@ $RSS + \lambda \sum_{l=1}^{d-1}\mathopen|\beta_l\mathclose|$ is minimized, for a
 given value of the —modified— lagrangian multiplier $\lambda \in \mathbb{R}^+$.  
 
 A similar formulation is also viable, where the L0-norm is used instead
-(although it is not really a proper norm). We now seek to minimize the RSS,
+(although it is not really a proper norm). We here seek to minimize the RSS,
 subject to $\sum_{l=1}^{d-1}I(\beta_l \neq 0) \leq s$, where $I(\beta_l \neq 0)$
 is an indicator function taking on the value of 1 if $\beta_j \neq 0$ and 0
 otherwise. In this setting, $s$ represents the number of features to consider in
-the model. This optimization problem may be casted as a Mixed Integer Quadratic
+the model. This optimization problem may be cast as a Mixed Integer Quadratic
 Program (MIQP). Traditionally, the feature selection problem has not been
 tackled this way because of the common belief in the statistics community that
 large-scale problems are intractable. But this is no longer the case,
 considering the computing power currently available and the performance of
 modern optimization solvers such as Gurobi.
 
+Your tasks:
 
-Implement the Lasso version together with minimizing the least absolute error.
-Solve the linear programming problem and analyze the solution process in the
-light of the article [KN1].
+1. Formulate the Lasso version minimizing the sum of the RSS and the least absolute
+error (L0) of the
+coefficients.  
 
-Implement the Lasso version (L1-norm as regularization component added to the
-objective function) together with minimizing the least absolute error instead of
-the square of residuals as done in the notebook. 
+2. Formulate the Lasso version minimizing the sum of the RSS and an L1-norm
+   regularization component.
 
-- Solve the linear programming problem in training and analyze the solution
-  process in the light of the article [KN1]. 
+3. Reformulate the previous two models by substituting to the RSS the sum of the
+   absolute errors. Linearize the model.
 
-- Compare the accuracy of the L1-norm and the L0-norm approach presented in the
-  document.
+4. Implement the MILP from task 3.
+
+5. Implement the MIQP from tasks 1 and 2.
+
+6. Solve the models on the training data and test their solutions on the test
+   data. 
+
+7. Compare the results and analyse the accuracy of the models.
+
+
+
+
+Here we load the training and test data and prepare it for the analysis.
+
+```{Python}
+import numpy as np
+import matplotlib.pyplot as plt
+import math
+
+import gurobipy as gp
+from gurobipy import GRB
+
+from sklearn.preprocessing import StandardScaler
+from sklearn.datasets import load_boston
+from sklearn.model_selection import train_test_split
+
+# Load data and split into train (80%) and test (20%)
+boston = load_boston()
+X = boston['data']
+y = boston['target']
+Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2,random_state=10101)
+scaler = StandardScaler()
+scaler.fit(Xtrain)
+Xtrain_std = scaler.transform(Xtrain)
+Xtest_std = scaler.transform(Xtest)
+```
