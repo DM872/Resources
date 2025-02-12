@@ -64,10 +64,6 @@ the persons at risk. How can you solve this problem in polynomial
 time?
 -->
 
-
-
-
----
 ## Motivation
 
 Linear regression was invented at the beginning of the 19th century and today,
@@ -90,7 +86,6 @@ continuous variable and other explanatory variables, which can be either
 continuous or categorical. When applying this technique, finding the subset of
 features that maximizes its performance is often of interest.
 
----
 ## Problem Description
 
 Linear regression is a supervised learning algorithm used to predict a
@@ -107,19 +102,43 @@ Ordinary Least Squares (OLS) method achieves this by taking the derivative of
 this quadratic and convex function and then finding the stationary point:
 $\beta_{OLS}=(X^T X)^{-1} X^T y$.
 
-In practice, some of the features are in fact not associated with the response. By including them, we only add unnecessary complexity to the model and increase variance to the weight estimates. However, finding the best performing model is no simple task as there is an exponential number of candidates, as one has to test $\sum_{s=1}^{d-1}{{d-1} \choose s}$ models. Since OLS rarely yields estimates that are exactly zero, thus discarding the features related to them, we need to resort to feature selection methods. Popular methods include:
+In practice, some of the features are in fact not associated with the response.
+By including them, we only add unnecessary complexity to the model and increase
+variance to the weight estimates. However, finding the best performing model is
+no simple task as there is an exponential number of candidates, as one has to
+test $\sum_{s=1}^{d-1}{{d-1} \choose s}$ models. Since OLS rarely yields
+estimates that are exactly zero, thus discarding the features related to them,
+we need to resort to feature selection methods. Popular methods include:
 
 - Subset selection, e.g. stepwise selection.
 - Dimensionality reduction, e.g. principal component regression.
 - Shrinkage, e.g. the Lasso.
 
-The Lasso has undoubtedly been the method of choice for the last decade. Basically it fits a model containing all $d$ predictors, while incorporating a budget constraint based on the L1-norm of $\beta$, disregarding the intercept component. In fact, this method minimizes the RSS, subject to $\sum_{l=1}^{d-1}\mathopen|\beta_l\mathclose| \leq s$, where $s$ is a hyper-parameter representing the budget that is usually tuned via cross-validation. This constraint has the effect of shrinking all weight estimates, allowing some of them to be exactly zero when $s$ is small enough. Finally, it is worth noting that the unconstrained version of the Lasso is more frequently used. This version solves an unconstrained optimization problem where $RSS + \lambda \sum_{l=1}^{d-1}\mathopen|\beta_l\mathclose|$ is minimized, for a given value of the —modified— lagrangian multiplier $\lambda \in \mathbb{R}^+$.  
+The Lasso has undoubtedly been the method of choice for the last decade.
+Basically it fits a model containing all $d$ predictors, while incorporating a
+budget constraint based on the L1-norm of $\beta$, disregarding the intercept
+component. In fact, this method minimizes the RSS, subject to
+$\sum_{l=1}^{d-1}\mathopen|\beta_l\mathclose| \leq s$, where $s$ is a
+hyper-parameter representing the budget that is usually tuned via
+cross-validation. This constraint has the effect of shrinking all weight
+estimates, allowing some of them to be exactly zero when $s$ is small enough.
+Finally, it is worth noting that the unconstrained version of the Lasso is more
+frequently used. This version solves an unconstrained optimization problem where
+$RSS + \lambda \sum_{l=1}^{d-1}\mathopen|\beta_l\mathclose|$ is minimized, for a
+given value of the —modified— lagrangian multiplier $\lambda \in \mathbb{R}^+$.  
 
-A similar formulation is now presented, where the L0-norm is used instead (although it is not really a proper norm). We now seek to minimize the RSS, subject to $\sum_{l=1}^{d-1}I(\beta_l \neq 0) \leq s$, where $I(\beta_l \neq 0)$ is an indicator function taking on the value of 1 if $\beta_j \neq 0$ and 0 otherwise. In this setting, $s$ represents the number of features to consider in the model. This optimization problem may be casted as a Mixed Integer Quadratic Program (MIQP). Traditionally, the feature selection problem has not been tackled this way because of the common belief in the statistics community that large-scale problems are intractable. But this is no longer the case, considering the computing power currently available and the performance of modern optimization solvers such as Gurobi.
+A similar formulation is also viable, where the L0-norm is used instead
+(although it is not really a proper norm). We now seek to minimize the RSS,
+subject to $\sum_{l=1}^{d-1}I(\beta_l \neq 0) \leq s$, where $I(\beta_l \neq 0)$
+is an indicator function taking on the value of 1 if $\beta_j \neq 0$ and 0
+otherwise. In this setting, $s$ represents the number of features to consider in
+the model. This optimization problem may be casted as a Mixed Integer Quadratic
+Program (MIQP). Traditionally, the feature selection problem has not been
+tackled this way because of the common belief in the statistics community that
+large-scale problems are intractable. But this is no longer the case,
+considering the computing power currently available and the performance of
+modern optimization solvers such as Gurobi.
 
-
-Consider the [Feature Selection
-case](https://colab.research.google.com/github/Gurobi/modeling-examples/blob/master/linear_regression/l0_regression.ipynb).
 
 Implement the Lasso version together with minimizing the least absolute error.
 Solve the linear programming problem and analyze the solution process in the
