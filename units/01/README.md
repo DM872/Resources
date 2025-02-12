@@ -13,7 +13,7 @@ Week 7:
 - Farkas (slides-fakas.pdf, [A])
 - MILP Practical Guidelines ([KN2] klotz-MIP.pdf, slides-klotz-MIP.pdf)
 - Modeling (slides-modeling_2.pdf, [Wi, chp 3, 5])
-- Presolving (slides, [ABGRW])
+- Presolving (slides-preprocessing.pdf, [ABGRW])
 - Practice (sheet01, task 3) 
 ***
 
@@ -43,8 +43,8 @@ Week 7:
   methods](https://scholarship.rice.edu/bitstream/handle/1911/101715/TR91-11.pdf). Technical
   Report 91-11 (Also in Operations Research, 40(5), 885.)
 
-- [A] Erling D. Andersen (2001) Certificates of Primal or Dual Infeasibility in Linear
-  Programming. Volume 20, pages 171–183.
+- [A] Erling D. Andersen (2001) [Certificates of Primal or Dual Infeasibility in Linear
+  Programming](https://doi.org/10.1023/A:1011259103627). Volume 20, pages 171–183.
 
 - [KN2] Ed Klotz Alexandra M. Newman. [Practical guidelines for solving
   difficult mixed integer linear

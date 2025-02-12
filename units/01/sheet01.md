@@ -50,7 +50,7 @@ using as starting solution $[x_1, x_2, x_3]=[1, 3\/2, 1\/4]$.
 
 How should the algorithm change if the problem was a minimization problem?
 
-## Task 3
+## Task 3 - Feature Selection
 
 <!--
 A person infected with Coronavirus is located at one node $p$ in a
@@ -63,6 +63,60 @@ between persons in the network such that the infection does not reach
 the persons at risk. How can you solve this problem in polynomial
 time?
 -->
+
+
+
+
+---
+## Motivation
+
+Linear regression was invented at the beginning of the 19th century and today,
+after more than 200 years, it is still used extensively in practical
+applications for description and prediction purposes:
+
+- In econometrics, it is useful to estimate the price elasticity of a particular
+  product by regressing sales revenue on price and possibly other features such
+  as demographics and competitor and retail information.
+- In health sciences, it can be applied to predict how long a patient will
+  remain (i.e. length of stay) in the ER of a hospital based on patient
+  information, triage assessment, medical test results, and the date/time of
+  arrival.
+- In social sciences, it may shed light on future academic performance of
+  students, so proactive measures can be taken to improve their learning
+  outcomes.
+
+In general, linear regression is used to model the relationship between a
+continuous variable and other explanatory variables, which can be either
+continuous or categorical. When applying this technique, finding the subset of
+features that maximizes its performance is often of interest.
+
+---
+## Problem Description
+
+Linear regression is a supervised learning algorithm used to predict a
+quantitative response. It assumes that there is a linear relationship between
+the feature vector $x_i \in \mathbb{R}^d$ and the response $y_i \in \mathbb{R}$.
+Mathematically speaking, for sample $i$ we have $y_i = \beta^T x_i +
+\epsilon_i$, where $\beta \in \mathbb{R}^d$ is the vector of feature weights,
+including the intercept, and  $\epsilon_i$ is a normally-distributed random
+variable with zero mean and constant variance representing the error term. We
+can learn the weights from a training dataset with $n$ observations $\{X \in
+\mathbb{M}^{nxd},y \in \mathbb{R}^n\}$ by minimizing the Residual Sum of Squares
+(RSS): $e^Te =(y-X\beta)^T (y-X\beta)=\beta^T X^T X\beta- 2y^TX\beta+y^T y$. The
+Ordinary Least Squares (OLS) method achieves this by taking the derivative of
+this quadratic and convex function and then finding the stationary point:
+$\beta_{OLS}=(X^T X)^{-1} X^T y$.
+
+In practice, some of the features are in fact not associated with the response. By including them, we only add unnecessary complexity to the model and increase variance to the weight estimates. However, finding the best performing model is no simple task as there is an exponential number of candidates, as one has to test $\sum_{s=1}^{d-1}{{d-1} \choose s}$ models. Since OLS rarely yields estimates that are exactly zero, thus discarding the features related to them, we need to resort to feature selection methods. Popular methods include:
+
+- Subset selection, e.g. stepwise selection.
+- Dimensionality reduction, e.g. principal component regression.
+- Shrinkage, e.g. the Lasso.
+
+The Lasso has undoubtedly been the method of choice for the last decade. Basically it fits a model containing all $d$ predictors, while incorporating a budget constraint based on the L1-norm of $\beta$, disregarding the intercept component. In fact, this method minimizes the RSS, subject to $\sum_{l=1}^{d-1}\mathopen|\beta_l\mathclose| \leq s$, where $s$ is a hyper-parameter representing the budget that is usually tuned via cross-validation. This constraint has the effect of shrinking all weight estimates, allowing some of them to be exactly zero when $s$ is small enough. Finally, it is worth noting that the unconstrained version of the Lasso is more frequently used. This version solves an unconstrained optimization problem where $RSS + \lambda \sum_{l=1}^{d-1}\mathopen|\beta_l\mathclose|$ is minimized, for a given value of the —modified— lagrangian multiplier $\lambda \in \mathbb{R}^+$.  
+
+A similar formulation is now presented, where the L0-norm is used instead (although it is not really a proper norm). We now seek to minimize the RSS, subject to $\sum_{l=1}^{d-1}I(\beta_l \neq 0) \leq s$, where $I(\beta_l \neq 0)$ is an indicator function taking on the value of 1 if $\beta_j \neq 0$ and 0 otherwise. In this setting, $s$ represents the number of features to consider in the model. This optimization problem may be casted as a Mixed Integer Quadratic Program (MIQP). Traditionally, the feature selection problem has not been tackled this way because of the common belief in the statistics community that large-scale problems are intractable. But this is no longer the case, considering the computing power currently available and the performance of modern optimization solvers such as Gurobi.
+
 
 Consider the [Feature Selection
 case](https://colab.research.google.com/github/Gurobi/modeling-examples/blob/master/linear_regression/l0_regression.ipynb).
