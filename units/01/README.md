@@ -14,7 +14,7 @@ Week 7:
 - MILP Practical Guidelines ([KN2] klotz-MIP.pdf, slides-klotz-MIP.pdf)
 - Modeling (slides-modeling_2.pdf, [Wi, chp 3, 5])
 - Presolving (slides-preprocessing.pdf, [ABGRW])
-- Practice (sheet01, task 3) 
+- Practice (sheet01, task 3, sheet01_t3_sol.ipynb) 
 ***
 
 ## References

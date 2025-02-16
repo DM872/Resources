@@ -142,8 +142,7 @@ modern optimization solvers such as Gurobi.
 Your tasks:
 
 1. Formulate the Lasso version minimizing the sum of the RSS and the least absolute
-error (L0) of the
-coefficients.  
+error (L0) of the coefficients.  
 
 2. Formulate the Lasso version minimizing the sum of the RSS and an L1-norm
    regularization component.
@@ -166,6 +165,7 @@ coefficients.
 Here we load the training and test data and prepare it for the analysis.
 
 ```{Python}
+%matplotlib inline
 import numpy as np
 import matplotlib.pyplot as plt
 import math
@@ -174,15 +174,16 @@ import gurobipy as gp
 from gurobipy import GRB
 
 from sklearn.preprocessing import StandardScaler
-from sklearn.datasets import load_boston
 from sklearn.model_selection import train_test_split
+from sklearn.datasets import fetch_california_housing
+
 
 # Load data and split into train (80%) and test (20%)
-boston = load_boston()
-X = boston['data']
-y = boston['target']
+# Load data and split into train (80%) and test (20%)
+housing = fetch_california_housing()
+X = housing['data']
+y = housing['target']
 Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.2,random_state=10101)
-scaler = StandardScaler()
 scaler.fit(Xtrain)
 Xtrain_std = scaler.transform(Xtrain)
 Xtest_std = scaler.transform(Xtest)
