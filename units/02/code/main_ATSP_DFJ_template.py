@@ -56,6 +56,8 @@ def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_
     add_root_node_DFJ_cuts = True
     if add_root_node_DFJ_cuts:
         m.optimize()
+        x_values = {(i, j): x[i, j].x for (i, j) in x.keys()}
+        #print(x_values[(0, 1)])
         # .... separate and add violated DFJ inequalities
         add_root_node_DFJ_cuts = False
 
