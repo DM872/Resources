@@ -55,7 +55,8 @@ def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_
     m.setObjective(obj, GRB.MINIMIZE)
     add_root_node_DFJ_cuts = True
     if add_root_node_DFJ_cuts:
-        # ....
+        m.optimize()
+        # .... separate and add violated DFJ inequalities
         add_root_node_DFJ_cuts = False
 
     if not relax:
