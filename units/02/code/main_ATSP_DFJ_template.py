@@ -15,7 +15,7 @@ def find_subtours(x_values):
 def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_lim):
     d = load_instance(folder, filename, n, Asymmetry_Flag, data_format_flag)
     #-------------------------------------------------------------------------------------------------------------------
-    def subtour_elimination_lazy_callback(model, where):
+    def DFJ_incumbent_callback(model, where):
         if where == GRB.Callback.MIPSOL:
             x_values = model.cbGetSolution(model._x)
             subtours = find_subtours(x_values)
@@ -28,17 +28,17 @@ def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_
                             S_bar = set(range(0, model._n)).difference(S)
                             model.cbLazy(quicksum(model._x[i, j] for i in S_bar for j in S_bar if i != j) <= len(S_bar) - 1)
     #-------------------------------------------------------------------------------------------------------------------
-    def DFJ_callback(model, where):
+    def DFJ_fractional_node_callback(model, where):
         if where == GRB.Callback.MIPNODE:
-            # add cuts at every bnb node
+            # add violated cuts at every BnB node
             if model.cbGet(GRB.callback.MIPNODE_NODCNT) % 1 == 0:
                 if model.cbGet(GRB.Callback.MIPNODE_STATUS) == GRB.OPTIMAL:
                     x_values = model.cbGetNodeRel(model._x)
                     model.cbCut(0, GRB.LESS_EQUAL, 0)
     #-------------------------------------------------------------------------------------------------------------------
     def complete_callback(model, where):
-        #DFJ_callback(model, where)
-        subtour_elimination_lazy_callback(model, where)
+        #DFJ_fractional_node_callback(model, where)
+        DFJ_incumbent_callback(model, where)
     #-------------------------------------------------------------------------------------------------------------------
     m = Model("Optimize")
     x = {}
@@ -59,7 +59,6 @@ def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_
         x_values = {(i, j): x[i, j].x for (i, j) in x.keys()}
         #print(x_values[(0, 1)])
         # .... separate and add violated DFJ inequalities
-        add_root_node_DFJ_cuts = False
 
     if not relax:
         # set up the MILP problem
@@ -73,8 +72,12 @@ def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_
         m._n = n
         m._epsilon_1 = pow(10, -4)
         m._epsilon_2 = pow(10, -3)
-        m.setParam('MIPGap', 0) # means that an optimal solution is being searched for
-        m.setParam('MIPGapAbs', 0.99) # means that the absolute gap might be up to 1 withoug violating optimality conditions
+        # we search for truly optimal solutions, for which we can prove that the optimality gaps is 0
+        m.setParam('MIPGap', 0)       
+        # given that all c_ij costs are integer-valued, then a lower bound = a + epsilon where a is integer and epsilon < 1 implies that an 
+        # optimal solution might have the objective of at least a + 1. hence, the absolute optimality gap equal to 0.99 allows to find a 
+        # provably optimal solution 
+        m.setParam('MIPGapAbs', 0.99) 
         m.setParam('Timelimit', time_lim)
         # no callback
         #m.optimize()
