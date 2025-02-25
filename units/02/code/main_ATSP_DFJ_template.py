@@ -19,14 +19,14 @@ def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_
         if where == GRB.Callback.MIPSOL:
             x_values = model.cbGetSolution(model._x)
             subtours = find_subtours(x_values)
-            if len(subtours) > 0:
-                for S in subtours:
-                    if len(S) < model._n:
-                        if len(S) <= model._n / 2:
-                            model.cbLazy(quicksum(model._x[i, j] for i in S for j in S if i != j) <= len(S) - 1)
-                        else:
-                            S_bar = set(range(0, model._n)).difference(S)
-                            model.cbLazy(quicksum(model._x[i, j] for i in S_bar for j in S_bar if i != j) <= len(S_bar) - 1)
+            for S in subtours:
+                if len(S) < model._n:
+                    if len(S) <= model._n / 2:
+                        violated_subtour = S
+                    else:
+                        S_bar = set(range(0, model._n)).difference(S)
+                        violated_subtour = S_bar
+                    model.cbLazy(quicksum(model._x[i, j] for i in violated_subtour for j in violated_subtour if i != j) <= len(violated_subtour) - 1)
     #-------------------------------------------------------------------------------------------------------------------
     def DFJ_fractional_node_callback(model, where):
         if where == GRB.Callback.MIPNODE:
