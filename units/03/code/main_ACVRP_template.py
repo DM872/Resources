@@ -74,7 +74,7 @@ def ACVRP_compact_formulation(folder, filename, Q, n, relax, time_lim):
 def main_ACVRP():
     relax = False
     time_lim = 3600
-    ACVRP_compact_formulation('A', 'A-n33-k5', 100, 32, relax, time_lim)
+    ACVRP_compact_formulation('instances', 'A-n33-k5', 100, 32, relax, time_lim)
 #-----------------------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":
     main_ACVRP()
