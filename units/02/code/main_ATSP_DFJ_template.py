@@ -16,6 +16,7 @@ def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_
     d = load_instance(folder, filename, n, Asymmetry_Flag, data_format_flag)
     #-------------------------------------------------------------------------------------------------------------------
     def DFJ_incumbent_callback(model, where):
+        # incumbent callback that is called at every integer solution node
         if where == GRB.Callback.MIPSOL:
             x_values = model.cbGetSolution(model._x)
             subtours = find_subtours(x_values)
@@ -29,6 +30,7 @@ def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_
                     model.cbLazy(quicksum(model._x[i, j] for i in violated_subtour for j in violated_subtour if i != j) <= len(violated_subtour) - 1)
     #-------------------------------------------------------------------------------------------------------------------
     def DFJ_fractional_node_callback(model, where):
+        # this callback is called at every other node of the BnB tree
         if where == GRB.Callback.MIPNODE:
             # add violated cuts at every BnB node
             if model.cbGet(GRB.callback.MIPNODE_NODCNT) % 1 == 0:
@@ -49,7 +51,14 @@ def ATSP_DFJ(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_
     for i in range(0, n):
         m.addLConstr(quicksum(x[i, j] for j in range(0, n) if i != j), GRB.EQUAL, 1)
         m.addLConstr(quicksum(x[j, i] for j in range(0, n) if i != j), GRB.EQUAL, 1)
-
+    #-------------------------------------------------------------------------------------------------------------------
+    # here one can add the D-L or M-T-Z constraints
+    
+    #-------------------------------------------------------------------------------------------------------------------
+    # here one can add the G-G or G-G m. constraints
+    
+    #-------------------------------------------------------------------------------------------------------------------
+    
     obj = quicksum(d[i, j] * x[i, j] for i in range(0, n) for j in range(0, n) if i != j)
     #m.setParam('OutputFlag', False)
     m.setObjective(obj, GRB.MINIMIZE)
