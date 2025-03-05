@@ -8,10 +8,13 @@ def ACVRP_compact_formulation(folder, filename, Q, n, relax, time_lim):
     def RCI_fractional_node_callback(model, where):
         if where == GRB.Callback.MIPNODE:
             # add cuts at every bnb node
-            if model.cbGet(GRB.callback.MIPNODE_NODCNT) % 3 == 0:
+            if model.cbGet(GRB.callback.MIPNODE_NODCNT) % 1 == 0:
                 if model.cbGet(GRB.Callback.MIPNODE_STATUS) == GRB.OPTIMAL:
                     x_values = model.cbGetNodeRel(model._x)
-                    model.cbCut(0, GRB.LESS_EQUAL, 0)
+                    # x_values are analized for violated RCI
+                    # violated RCI is imposed
+                    # variables to be used in a cut are called as follows:
+                    # model.cbCut(model._x[0, 1], GRB.LESS_EQUAL, 1)
     #-------------------------------------------------------------------------------------------------------------------
     m = Model("Optimize")
     x = {}
@@ -47,16 +50,14 @@ def ACVRP_compact_formulation(folder, filename, Q, n, relax, time_lim):
     if add_root_node_DFJ_cuts:
         m.optimize()
         x_values = {(i, j): x[i, j].x for (i, j) in x.keys()}
-        #print(x_values[(0, 1)])
-        # ....
-        add_root_node_DFJ_cuts = False
+        # RCI separation goes here
+        # violated RCI is imposed
     if not relax:
         # set up the MILP problem
         for i in C:
             for j in C:
                 if i != j:
                     x[i, j].vtype = GRB.BINARY
-        m.Params.LazyConstraints = 1
         m._x = x
         m._n = n
         m._Q = Q
@@ -66,6 +67,7 @@ def ACVRP_compact_formulation(folder, filename, Q, n, relax, time_lim):
         m.setParam('MIPGap', 0) # means that an optimal solution is being searched for
         m.setParam('MIPGapAbs', 0.99) # means that the absolute gap might be up to 1 withoug violating optimality conditions
         m.setParam('Timelimit', time_lim)
+        m.setParam('OutputFlag', True)
         # no callback
         m.optimize()
         # with callback
