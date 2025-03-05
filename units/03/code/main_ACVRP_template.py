@@ -48,10 +48,15 @@ def ACVRP_compact_formulation(folder, filename, Q, n, relax, time_lim):
     #m.setParam('OutputFlag', False)
     add_root_node_DFJ_cuts = True
     if add_root_node_DFJ_cuts:
-        m.optimize()
-        x_values = {(i, j): x[i, j].x for (i, j) in x.keys()}
-        # RCI separation goes here
-        # violated RCI is imposed
+        1 = 1
+        # while add_root_node_DFJ_cuts:
+        #     m.optimize()
+        #     x_values = {(i, j): x[i, j].x for (i, j) in x.keys()}
+        #     RCI separation goes here
+        #     if violated RCI found:
+        #         violated RCI is imposed
+        #     else:
+        #         add_root_node_DFJ_cuts = False
     if not relax:
         # set up the MILP problem
         for i in C:
