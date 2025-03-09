@@ -1,0 +1,192 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[danish,english]{babel}
+\usepackage{graphicx}
+\usepackage[a4paper,margin=2.7cm]{geometry}
+
+\usepackage[math]{kurier}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{enumerate}
+\usepackage{array}
+
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,matrix}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2ex} 
+
+
+\renewcommand{\vec}[1]{\ensuremath {\mathbf #1}}
+
+%%% Settings for the Instructor
+\newcommand{\courseid}{DM872}
+\newcommand{\coursename}{Mathematical Optimization at Work}
+\newcommand{\term}{Spring 2025}
+\newcommand{\dept}{Department of Mathematics and Computer Science}
+
+%%% Settings for the Student
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{WRITE-HERE-YOUR-FULLNAME}
+\newcommand{\assnr}{WRITE-ASSIGNMENT-NR}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{\cprnr}{WRITE-HERE-YOUR-CPR-NR}
+\makeatletter
+\let\runauthor\@author
+\let\runtitle\@title
+\makeatother
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{lastpage}
+\usepackage{listings}
+\lstset{language=Python,
+  basicstyle=\ttfamily\lst@ifdisplaystyle\footnotesize\fi,%\fontfamily{pzc}\selectfont,%
+  stringstyle=\ttfamily,
+  commentstyle=\ttfamily,
+  showstringspaces=false,
+  frame=lines, 
+  breaklines=true, tabsize=2,
+  extendedchars=true,inputencoding=utf8
+}
+%\lstavoidwhitepre
+
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\fancyhf{}
+%\fancyhead[LE,RO]{\nouppercase{\rightmark}}
+\fancyhead[R]{\runauthor}
+%\chead{}
+%\rhead{Ex.~nr.~\runauthor}
+\cfoot{Page \thepage\ of \pageref{LastPage}}
+
+\fancypagestyle{plain}{
+\lhead{\dept\\
+University of Southern Denmark, Odense}
+\chead{}
+\rhead{\today\\
+\runauthor}
+\lfoot{}
+\rfoot{}
+%\renewcommand{\headrulewidth}{0pt}
+}
+
+
+\title{\begin{flushleft}
+\vspace{-4ex}
+\courseid~-- \coursename \\[0.2cm]
+{\Large Answers to Obligatory Assignment \assnr, \term \\[3ex]
+\hrule}
+\end{flushleft}
+}
+
+
+\date{}
+
+
+
+\begin{document}
+\maketitle
+\setlength{\headheight}{26pt}
+
+
+Always insert a \verb=\newpage= after every Task.
+Remove the content of this page.
+
+\bigskip
+\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Template to write models (see latex source)
+
+\begin{align}
+   \label{ob} \max \; \quad & \sum_{j=1}^nc_jx_j  \\
+   \label{c1} \mbox{s.t.} \quad &\sum\limits_{j=1}^n a_{ij}x_j\geq b_i,
+   & \quad i=1,\ldots,m \\
+\label{c2}   &x_j \geq 0, & \quad j=1,\ldots,n   
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Template for algorithm pseudocode (see latex source):
+
+\begin{algorithm}[htb]
+ \KwData{this text}
+ \KwResult{how to write algorithm with \LaTeX2e }
+ initialization\;
+ \While{not at end of this document}{
+  read current\;
+  \eIf{understand}{
+   go to next section\;
+   current section becomes this one\;
+   }{
+   go back to the beginning of current section\;
+  }
+ }
+ \caption{How to write algorithms}
+\end{algorithm}
+
+
+\bigskip
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Template for source code inclusion:
+
+\begin{lstlisting}
+import numpy as np
+
+\end{lstlisting}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Template for figure inclusion (see latex source)
+
+\begin{figure}[htb]
+\begin{center}
+%% uncomment the line below and change the figure file. 
+%  \includegraphics[width=1\textwidth]{ex1}
+\end{center}
+\end{figure}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Task 1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\newpage
+\section{Task 2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{document}
+          
+
+
+
