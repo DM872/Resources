@@ -21,10 +21,14 @@ z_{IP}=&\text{max} &16x_1+10x_2+4x_4\\
 \end{array}
 $$
 
-1. Relax only the first constraint and calculate the Lagrangian dual
+#### Subtask 1
+
+Relax only the first constraint and calculate the Lagrangian dual
    bound.
-   
-2. Relax the second and third constraints and calculate the Lagrangian
+
+#### Subtask 2
+
+Relax the second and third constraints and calculate the Lagrangian
    dual bound. Which among the two relaxations provides the best dual
    bound and how do they compare with respect to the dual bound given by
    the linear relaxation of the original problem IP? 
