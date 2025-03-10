@@ -87,9 +87,9 @@ $$
 
    Set the step size to the value:
    
-   \[
+$$
    \theta=\mu \frac{z_{UB}-z_{LB}}{\sum_{i=1}^m (\gamma_i)^2}
-   \]
+$$
    
    where $z_{LB}$ and $z_{UB}$ are the current lower bound and upper
    bound, respectively and $\mu$ an user defined parameter (try with 2
@@ -97,9 +97,9 @@ $$
    
    Update $\lambda_i$ using 
    
-   $$
-   \lambda_i=\max\{\lambda_i+\theta\gamma_i,0\}\qquad i=1,..,m
-   $$
+$$
+  \lambda_i=\max\{\lambda_i+\theta\gamma_i,0\}\qquad i=1,..,m
+$$
 
    Terminate when $\mu$ has converged to zero. 
 
