@@ -62,46 +62,49 @@ $$
 \end{array}
 $$
 
+#### Subtask 1
 
-1. Generate a Lagrangian relaxation of this SCP. Write it in general
-   terms for a SCP and for the numerical example given. 
+Generate a Lagrangian relaxation of this SCP. Write it in general terms for a
+   SCP and for the numerical example given. 
 
-2. Let the problem determined at the previous point be called LR
-   (Lagrangian relaxation problem or Lagrangian lower bound
-   problem). Consider the arbitrarily decided set of values for the
-   Lagrangian multipliers $\lambda_1=1.5,\lambda_2=1.6,\lambda_3=2.2$.
-   Find the solution to the LR and the corresponding lower bound
-   $z_{LR}$ to the original problem.  Is this a lower bound? Is the
-   solution found for the LR feasible for the original problem? Is the
-   solution found for the LR optimal for the original problem?
+#### Subtask 2
 
-  
-3. Repeat the task at the point 2. for the set of values: 
-   $\lambda_1=10,\lambda_2=10,\lambda_3=10$. Under what
-   circumstances does the solutions to the LR being feasible for the
-   original problem also imply that it is optimal for the original
-   problem?
+Let the problem determined at the previous point be called LR (Lagrangian
+   relaxation problem or Lagrangian lower bound problem). Consider the
+   arbitrarily decided set of values for the Lagrangian multipliers
+   $\lambda_1=1.5,\lambda_2=1.6,\lambda_3=2.2$.  Find the solution to the LR and
+   the corresponding lower bound $z_{LR}$ to the original problem.  Is this a
+   lower bound? Is the solution found for the LR feasible for the original
+   problem? Is the solution found for the LR optimal for the original problem?
 
-4. Solve the Lagrangian dual problem by *subgradient
-   optimization*. Use the procedure suggested by Held and Karp.
+#### Subtask 3 
 
-   Set the step size to the value:
-   
+Repeat the task at the point 2. for the set of values:
+   $\lambda_1=10,\lambda_2=10,\lambda_3=10$. Under what circumstances does the
+   solutions to the LR being feasible for the original problem also imply that
+   it is optimal for the original problem?
+
+#### Subtask 4
+
+Solve the Lagrangian dual problem by *subgradient optimization*. Use the
+   procedure suggested by Held and Karp.
+
+Set the step size to the value:
+
 $$
    \theta=\mu \frac{z_{UB}-z_{LB}}{\sum_{i=1}^m (\gamma_i)^2}
 $$
-   
-   where $z_{LB}$ and $z_{UB}$ are the current lower bound and upper
-   bound, respectively and $\mu$ an user defined parameter (try with 2
-   and decrease it throughout the iterations).
-   
-   Update $\lambda_i$ using 
-   
+
+where $z_{LB}$ and $z_{UB}$ are the current lower bound and upper bound,
+   respectively and $\mu$ an user defined parameter (try with 2 and decrease it
+   throughout the iterations).
+
+Update $\lambda_i$ using
+
 $$
   \lambda_i=\max\{\lambda_i+\theta\gamma_i,0\}\qquad i=1,..,m
 $$
 
-   Terminate when $\mu$ has converged to zero. 
+Terminate when $\mu$ has converged to zero.
 
-   Is the final solution optimal for the original problem?  
-
+Is the final solution optimal for the original problem?  
