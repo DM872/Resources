@@ -7,7 +7,7 @@
 
 Design a Lagrangian relaxation algorithm for the Multicommodity flow problem.
 
-### Task 3
+### Task 2
 
 Consider the following problem: <!--  from [Fi2]: -->
 
@@ -34,7 +34,7 @@ Relax the second and third constraints and calculate the Lagrangian
    the linear relaxation of the original problem IP? 
 
 
-### Task 2
+### Task 3
 
 <!-- 
 The following is based on a tutorial on Lagrangian Relaxation by J E
