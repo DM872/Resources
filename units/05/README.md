@@ -5,7 +5,9 @@ Week 12
 
 - Dantzig Wolfe decomposition and Delayed Column Generation (slides, [BGLMS, sc 3]; [Wo ch 11 in LMS]; [LD])
 - Delayed Column Generation (slides, [Wo ch 11 in LMS])
-- Dual Bounds in Column Generation (Notes)
+- Dual Bounds in Column Generation (slides, [Wo ch 11 in LMS], [LD])
+- Extensive Formulation for CVRP and Branch and Price solution (slides in
+  ItsLearning, [Fe]) 
 - Practice on CG (practice)
 
 ***
