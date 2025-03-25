@@ -43,7 +43,13 @@ with the volume they occupy. So, how should these items be packed?
 |6, 6, 5, 5, 5, 4, 4, 4, 4, 2, 2, 2, 2, 3, 3, 7, 7, 5, 5, 8, 8, 4, 4, 5|
 |-----------------------------------------------------------------------|
 
-![instance]({{ "./bpp-instance.png" | absolute_url }}){:width="50%" .center-image}
+
+
+<div style="text-align:center;">
+<img src="./bpp-instance.png" alt="example" width="350">
+</div>
+
+
 
 This is an example of a problem called the *bin packing problem*. It can
 be described mathematically as follows.
