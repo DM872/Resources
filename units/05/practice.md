@@ -28,9 +28,7 @@ and
 
 $$m=3,n=2$$
 
-$$[a_{ij}]=\begin{bmatrix}5&3\\3&8\\2&10\end{bmatrix},[c_{ij}]=\begin{bmatrix}20&16\\15&19\\19&14\end{bmatrix}$$
-
-$$
+$$[a_{ij}]=\begin{bmatrix}5&3\\\\3&8\\\\2&10\end{bmatrix},[c_{ij}]=\begin{bmatrix}20&16\\\\15&19\\\\19&14\end{bmatrix}
 [b_j]=\begin{bmatrix}6\\\\21\end{bmatrix}
 $$
 
