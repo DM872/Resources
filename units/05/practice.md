@@ -25,6 +25,7 @@ $$
 
 Solve an instance by delayed column generation treating the constraints $\sum_{j=1}^n x_{ij}= 1, i = 1,\ldots, m$ as the complicating ones
 and 
+
 $$m=3,n=2,[a_{ij}]=\begin{bmatrix}5&3\\3&8\\2&10\end{bmatrix},[c_{ij}]=\begin{bmatrix}20&16\\15&19\\19&14\end{bmatrix}
 [b_j]=\begin{bmatrix}6\\21\end{bmatrix}$$.
 
@@ -41,15 +42,10 @@ with the volume they occupy. So, how should these items be packed?
 |Weights of items to be packed in bins of size 9|
 |-----------------------------------------------------------------------|
 |6, 6, 5, 5, 5, 4, 4, 4, 4, 2, 2, 2, 2, 3, 3, 7, 7, 5, 5, 8, 8, 4, 4, 5|
-|-----------------------------------------------------------------------|
-
-
 
 <div style="text-align:center;">
-<img src="./bpp-instance.png" alt="example" width="350">
+<img src="./bpp-instance.png" alt="example" width="450">
 </div>
-
-
 
 This is an example of a problem called the *bin packing problem*. It can
 be described mathematically as follows.
