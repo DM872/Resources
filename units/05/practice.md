@@ -113,3 +113,22 @@ scratch see:
   [test_pricer.py](https://github.com/Pyomo/pyomo/blob/main/examples/pyomo/columngeneration/cutting_stock.py). Alternatively
   it is possible to follow this [example](../assets/cutstock.py).
 
+# Task 4
+
+In Task 3, we were lucky for the examples tested that the heuristic solution of
+the FFD algorithm was proven optimal by the lower bound found solving the LMP.
+When that is not the case we need to continue by branch-and-price or
+branch-and-cut-and-price. 
+
+Design a branch-and-price algorithm for your extensive formulation of the bin packing problem developed above. You can use as a reference the skeleton given on page 121 of [Wo] and define the branching scheme and its implications on the pricing problem. You can try to perform the branch-and-price by hand using the methods implemented in the previous sheet (ignoring the result of the FFD heuristic).
+
+Implementations:
+
+- gurobi does not provide support for variable addition at the nodes of the
+  solver branch and bound via callback. Hence, using gurobi you would need to
+  reimplement the whole branch and bound algorithm, solving from scratch a
+  column generation at every node of the tree.
+
+- pyscipopt provides support by defining a class inherited from Pricer. The
+  script test_pricing.py from the pyscipopt github repository shows how to do
+  this.
