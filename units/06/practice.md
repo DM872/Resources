@@ -43,14 +43,14 @@ Inspect the python file `mdvs-template.py` and make sure you understand it.
 
 Run the script `mdvs-template.py` on the small instance `m4n500s0.inp` and observe the output produced. Explain what happened and fill in the table below:
 
-|--------------------------------+------------------------+-----------------------------+-------------|
+
 | Capacity                       | 	62, 59, 56, 56 | 	45,45,45,45	 | 20,20,20,20 |
-|--------------------------------+------------------------+-----------------------------+-------------|
+|--------------------------------|------------------------|-----------------------------|-------------|
 | Linear Programming lower bound |                        |                             |             |
 | Integer Optimal solution       |                        |                             |             |
 | Number of vehicles used        |                        |                             |             |
 | Number of depots used          |                        |                             |             |
-|--------------------------------+------------------------+-----------------------------+-------------|
+
 
 Tips:
 
@@ -97,13 +97,13 @@ function of the h-th depot and of $\lambda$ as in (37) in slide 40.
 Once you a wrote such a script, use it to solve the subproblems and to
 compute a lower bound for the following values of vector $\lambda$:
 
-|------------------------------------------------+-------------|
+
 |                                                | Lower Bound |
-|------------------------------------------------+-------------|
+|------------------------------------------------|-------------|
 | all elements equal to 100                      |             |
 | all elements equal to 1000                     |             |
 | elements are random real numbers from [0,1000] |             |
-|------------------------------------------------+-------------|
+
 
 Are they all valid lower bounds? Can you devise a procedure to find the
 values for $\lambda$ that give the greatest possible lower bound?
