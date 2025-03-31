@@ -120,7 +120,12 @@ the FFD algorithm was proven optimal by the lower bound found solving the LMP.
 When that is not the case we need to continue by branch-and-price or
 branch-and-cut-and-price. 
 
-Design a branch-and-price algorithm for your extensive formulation of the bin packing problem developed above. You can use as a reference the skeleton given on page 121 of [Wo] and define the branching scheme and its implications on the pricing problem. You can try to perform the branch-and-price by hand using the methods implemented in the previous sheet (ignoring the result of the FFD heuristic).
+Design a branch-and-price algorithm for your extensive formulation of the bin
+packing problem developed above. You can use as a reference the skeleton given
+on page 121 of [Wo] and define the branching scheme and its implications on the
+pricing problem. You can try to perform the branch-and-price by hand using the
+methods implemented in the previous sheet (ignoring the result of the FFD
+heuristic).
 
 Implementations:
 
