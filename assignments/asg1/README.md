@@ -27,7 +27,7 @@
 
   - `src` must contain the Python code for the calculations you carried out.
 
-- **Deadline: Thursday, April 11, 2025, at 23:59**
+- **Deadline:** <s>Thursday, April 11, 2025, at 23:59</s> **Wednesday, April 16, 2025, at 23:59**
 
 - Questions and answers about this assignment cannot be addressed to the
   teachers but must be posted as issues in the github page
