@@ -1,7 +1,7 @@
 
 ## Unit 6 (MC) --- Applications
 
-Week 14:
+Week 14 and 15:
 - Vehicle Scheduling [BCG]; [CG]
 - Crew Scheduling [SGSK]
 - Resource Constrained Shortest Path [GM]
