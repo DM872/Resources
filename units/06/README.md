@@ -4,7 +4,7 @@
 Week 14 and 15:
 - Vehicle Scheduling [BCG]; [CG]
 - Crew Scheduling [SGSK]
-- Resource Constrained Shortest Path [GM]
+- Resource Constrained Shortest Path [ID], [GM]
 - Slides
 - Practice 
 
@@ -27,9 +27,14 @@ Week 14 and 15:
   Depots](http://dx.doi.org/10.1287/trsc.1090.0304). Transportation
   Science, 2010, 44(3), 367-382
 
+- [ID] Irnich, S., Desaulniers, G. (2005). Shortest Path Problems with Resource
+  Constraints. In: Desaulniers, G., Desrosiers, J., Solomon, M.M. (eds) Column
+  Generation. Springer, Boston, MA. https://doi.org/10.1007/0-387-25486-2_2
+
 - [GM] S. Gualandi and F. Malucelli. [Resource Constrained Shortest
   Paths with a Super Additive Objective
   Function](http://dx.doi.org/10.1007/978-3-642-33558-7_24). M. Milano
   (ed.). CP, Springer, 2012, 7514, 299-315
- 
+
+
 
