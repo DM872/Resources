@@ -36,5 +36,6 @@ Week 14 and 15:
   Function](http://dx.doi.org/10.1007/978-3-642-33558-7_24). M. Milano
   (ed.). CP, Springer, 2012, 7514, 299-315
 
-
+- [DLDG] J Desrosiers, M Lübbecke, G Desaulniers, JB Gauthier, 2024.
+  Branch-and-Price, Les Cahiers du GERAD
 

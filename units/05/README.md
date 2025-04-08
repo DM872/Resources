@@ -7,7 +7,7 @@ Week 12
 - Delayed Column Generation (slides, [Wo ch 11 in LMS])
 - Dual Bounds in Column Generation (slides, [Wo ch 11 in LMS], [LD])
 - Extensive Formulation for CVRP and Branch and Price solution (slides in
-  ItsLearning, [Fe]) 
+  ItsLearning, [Fe], [DLDG]) 
 - Practice on CG (practice)
 
 ***
@@ -33,3 +33,7 @@ Week 12
   vehicle routing
   problems](https://doi.org/10.1007/s10288-010-0130-z). 4OR-Q J Oper Res
   (2010) 8: 407.
+
+- [DLDG] J Desrosiers, M Lübbecke, G Desaulniers, JB Gauthier, 2024.
+  Branch-and-Price, Les Cahiers du GERAD
+
