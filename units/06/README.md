@@ -37,5 +37,4 @@ Week 14 and 15:
   (ed.). CP, Springer, 2012, 7514, 299-315
 
 - [DLDG] J Desrosiers, M Lübbecke, G Desaulniers, JB Gauthier, 2024.
-  Branch-and-Price, Les Cahiers du GERAD
-
+  [Branch-and-Price](https://www.gerad.ca/en/papers/G-2024-36), Les Cahiers du GERAD
