@@ -7,9 +7,10 @@
 [E] Matthias Ehrgott. (2005) [Multicriteria Optimization](https://doi.org/10.1007/3-540-27659-9), Second
   Edition. Springer Berlin.
 
-[DPAM] K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, “A Fast and Elitist
-  Multiobjective Genetic Algorithm: NSGA-II,” IEEE Transactions on Evolutionary
-  Computation, vol. 6, no. 2, pp. 182–197, 2002.
+[DPAM] K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, [A Fast and Elitist
+  Multiobjective Genetic Algorithm:
+  NSGA-II](https://doi.org/10.1109/4235.996017) IEEE Transactions on
+  Evolutionary Computation, vol. 6, no. 2, pp. 182–197, 2002.
 
 [P] Luís Paquete. [Stochastic Local Search Algorithms for Multiobjective
 Combinatorial Optimization: Methods and
