@@ -8,7 +8,7 @@
   Edition. Springer Berlin.
 
 [EFG] Ehrgott, M., Figueira, J. R., & Greco, S. (2010). [Trends in multiple
-criteria decision analysis](https://doi.org/10.1007/978-1-4419-5904-1) (1st ed. 2010.). Springer.
+criteria decision analysis](https://doi.org/10.1007/978-1-4419-5904-1) (1st ed.). Springer.
 
 [GEF] Greco, S., Ehrgott, M., & Figueira, J. R. (2016). [Multiple Criteria
 Decision Analysis: State of the Art
