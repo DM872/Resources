@@ -1,6 +1,6 @@
 ## Unit 11 (MC) --- Multiobjective optimization
 
-- Multiobjective optimization ([E], [DPAM])
+- Multiobjective optimization ([E], [P], [DPAM])
 
 ## References
 
@@ -10,6 +10,11 @@
 [DPAM] K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, “A Fast and Elitist
   Multiobjective Genetic Algorithm: NSGA-II,” IEEE Transactions on Evolutionary
   Computation, vol. 6, no. 2, pp. 182–197, 2002.
+
+[P] Luís Paquete. [Stochastic Local Search Algorithms for Multiobjective
+Combinatorial Optimization: Methods and
+Analysis](https://www.iospress.com/node15242/books/stochastic-local-search-algorithms-for-multiobjective-combinatorial-optimization)
+Dissertations in Artificial Intelligence, Vol. 295, AKA Verlag/ IOS Press, 2006
 
 [PS] Luís Paquete and Thomas Stützle. [Stochastic Local Search Algorithms for
 Multiobjective Combinatorial Optimization: A
