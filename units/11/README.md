@@ -1,6 +1,8 @@
 ## Unit 11 (MC) --- Multiobjective optimization
 
-- Multiobjective optimization ([E], [P], [DPAM])
+- Intro to multiobjective optimization (slides-multiobj, [E], [P])
+- NSGA-II (slides-multiobj, [DPAM])
+- Pareto Local Search ([P], [PS], [LL])
 
 ## References
 
