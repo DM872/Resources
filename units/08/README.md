@@ -7,9 +7,9 @@
 
 ## References
 
-- [Wo] L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 2021.
+[Wo] L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 2021.
 
-- [B] John E Beasley [Stochastic
+[B] John E Beasley [Stochastic
   Programming](people.brunel.ac.uk/~mastjjb/jeb/or/sp.html) in OR-Notes
 
-- [SP] [Stochastic Programming Society](https://www.stoprog.org/)
+[SP] [Stochastic Programming Society](https://www.stoprog.org/)

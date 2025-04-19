@@ -13,6 +13,5 @@
   Management](http://pure.iiasa.ac.at/id/eprint/1017/1/XB-79-106.pdf). Chichester,
   UK: John Wiley & Sons. ISBN 978-0-471-27626-5
 
-
 [Z] Zhang, Ray Jian, [Benders Decomposition: An Easy Example](https://youtu.be/vQzpydNOWDY). 2016. Video
 
