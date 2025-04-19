@@ -1,9 +1,10 @@
-#### Unit 8 (MC) --- Benders Decomposition
+#### Unit 9 (MC) --- Benders Decomposition
 
 - Benders Decomposition
 - Benders' Algorithm [Wo ch 12]; [DJ]; [Z];
 - Practice on Benders' Algorithm
 
+## References
 
 [Wo] L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 2021.
 

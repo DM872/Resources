@@ -2,6 +2,9 @@
 
 - [Integer Programming and Machine Learning][73] | [Wo sc 14.6]; [BD]; [FJ]
 
+
+## References
+
 [Wo] L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 2021.
  
 [BD] Bertsimas, D. and Dunn, J. (2017). [Optimal classification
