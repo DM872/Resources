@@ -1,5 +1,5 @@
 
-## Unit 6 (MC) --- Applications
+## Unit 6 (MC) --- Applications: Vehicle and Crew Scheduling
 
 Week 14 and 15:
 - Vehicle Scheduling [BCG]; [CG]

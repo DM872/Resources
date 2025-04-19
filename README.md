@@ -15,18 +15,17 @@ This repository contains resources for the course DM872:
 
 ## Contents and Teaching Plan
 
-| Unit | Content                                | Teacher | Weeks |
-|  --- | ---                                    | ---     | ---   |
-|    1 | Mixed Integer Linear Programming Recap | MC      | 6,7   |
-|    2 | Traveling Salesman Problem             | KP      | 8,9   |
-|    3 | Vehicle Routing                        | KP      | 10    |
-|    4 | Lagrangian Relaxation                  | MC      | 11,12 |
-|    5 | Column Generation                      | MC      | 12,13 |
-|    6 | Applications                           | MC      | 14,15 |
-|    7 | Matheuristics                          | MC      | 15    |
-|    8 | Matheuristics                          | MC      | 16,17 |
-|---|---|---|---|
-|    9 | Fairness                               | MC      | 18    |
-|    12 | Multiobjective                               | MC      | 18    |
-|   10 | Math Prog in Machine Learning                       | MC      | -     |
-|---|---|---|---|
+| Unit | Content                                   | Teacher | Weeks |
+|  --- | ---                                       | ---     | ---   |
+|    1 | Mixed Integer Linear Programming Recap    | MC      | 6,7   |
+|    2 | Traveling Salesman Problem                | KP      | 8,9   |
+|    3 | Vehicle Routing                           | KP      | 10    |
+|    4 | Lagrangian Relaxation                     | MC      | 11,12 |
+|    5 | Column Generation                         | MC      | 12,13 |
+|    6 | Applications: Vehicle and Crew Scheduling | MC      | 14,15 |
+|    7 | Matheuristics                             | MC      | 17    |
+|    8 | Stochastic Programming                    | MC      | 18    |
+|    9 | Benders Decomposition                     | MC      | 19    |
+|   10 | Fairness                                  | MC      |       |
+|   11 | Multiobjective                            | MC      |       |
+|   12 | Math Prog in Machine Learning             | MC      |       |
