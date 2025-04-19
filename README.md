@@ -25,6 +25,8 @@ This repository contains resources for the course DM872:
 |    6 | Applications                           | MC      | 14,15 |
 |    7 | Matheuristics                          | MC      | 15    |
 |    8 | Matheuristics                          | MC      | 16,17 |
+|---|---|---|---|
 |    9 | Fairness                               | MC      | 18    |
-|   10 | Machine Learning                       | MC      | -     |
-
+|    12 | Multiobjective                               | MC      | 18    |
+|   10 | Math Prog in Machine Learning                       | MC      | -     |
+|---|---|---|---|

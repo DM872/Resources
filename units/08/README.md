@@ -1,4 +1,4 @@
-## Unit 9 (MC) --- Stochastic Programming
+## Unit 8 (MC) --- Stochastic Programming
 
 - Stochastic Programming [B] [Wo p 241], [SP]
 - Stochastic Programming for Timetabling

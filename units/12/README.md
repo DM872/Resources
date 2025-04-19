@@ -1,17 +1,20 @@
-## Unit 12 (MC) --- Multiobjective optimization
+## Unit 12 (MC) --- Integer Programming and Machine Learning
 
-- Multiobjective optimization
+- [Integer Programming and Machine Learning][73] | [Wo sc 14.6]; [BD]; [FJ]
+
 
 ## References
 
-- [E] Matthias Ehrgott. (2005) [Multicriteria Optimization](https://doi.org/10.1007/3-540-27659-9), Second
-  Edition. Springer Berlin.
+[Wo] L.A. Wolsey. Integer programming. John Wiley & Sons, New York, USA, 2021.
+ 
+[BD] Bertsimas, D. and Dunn, J. (2017). [Optimal classification
+  trees](https://dx.doi.org/10.1007/s10994-017-5633-9). Machine
+  Learning 106(7): 1039–1082.
 
-- [DPAM] K. Deb, A. Pratap, S. Agarwal, and T. Meyarivan, “A Fast and Elitist
-  Multiobjective Genetic Algorithm: NSGA-II,” IEEE Transactions on Evolutionary
-  Computation, vol. 6, no. 2, pp. 182–197, 2002.
+[BD2] Bertsimas, D. and Dunn, J. (2019). Machine Learning Under a
+  Moden Optimization Lens. Dynamic Ideas LLC.
 
-  - [TV] Satya Tamby, Daniel Vanderpooten. (2021) [Enumeration of the
-  Nondominated Set of Multiobjective Discrete Optimization
-  Problems](https://doi.org/10.1287/ijoc.2020.0953). INFORMS Journal on
-  Computing 33(1):72-85
+[FJ] Fischetti, M. and Jo, J. (2018). [Deep neural networks and
+  mixed integer linear
+  optimization](https://doi.org/10.1007/s10601-018-9285-6). Constraints
+  23: 296–309.
