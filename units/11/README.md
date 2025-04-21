@@ -9,6 +9,8 @@
 [E] Matthias Ehrgott. (2005) [Multicriteria Optimization](https://doi.org/10.1007/3-540-27659-9), Second
   Edition. Springer Berlin.
 
+[M] K. Miettinen, Nonlinear Multiobjective Optimization. Kluwer Academic Publishers, 1999
+
 [EFG] Ehrgott, M., Figueira, J. R., & Greco, S. (2010). [Trends in multiple
 criteria decision analysis](https://doi.org/10.1007/978-1-4419-5904-1) (1st ed.). Springer.
 
