@@ -1,7 +1,12 @@
 #### Unit 9 (MC) --- Benders Decomposition
 
+Week 19, May 6, 2025
+
 - Benders Decomposition
 - Benders' Algorithm [Wo ch 12]; [DJ]; [Z];
+
+Week 19, May 8, 2025
+
 - Practice on Benders' Algorithm
 
 ## References

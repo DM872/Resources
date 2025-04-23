@@ -1,9 +1,16 @@
 ## Unit 8 (MC) --- Stochastic Programming
 
+Week 17, April 24, 2025
+
 - Stochastic Programming [B] [Wo p 241], [SP]
-- Stochastic Programming for Timetabling
+
+Week 18, April 29, 2025
+
 - Practice on SP
 
+Week 18, April 30, 2025
+
+- Stochastic Programming for Timetabling
 
 ## References
 
