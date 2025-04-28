@@ -2,15 +2,13 @@
 
 Week 17, April 24, 2025
 
-- Stochastic Programming [B] [Wo p 241], [SP]
-
-Week 18, April 29, 2025
-
-- Practice on SP
+- Stochastic Programming (slides, [B] [Wo p 241], [SP])
+- Stochastic Programming for Timetabling (slides)
 
 Week 18, April 30, 2025
 
 - Stochastic Programming for Timetabling
+- Practice on SP
 
 ## References
 
