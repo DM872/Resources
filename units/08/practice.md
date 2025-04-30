@@ -65,15 +65,13 @@ cost $c_{ij}$
 
 - The vehicle can wait if it arrives too early
 
-- Assume travel time is a stochastic variable
-
-- We use $\tau_{ij}$ to denote the stochastic variable representing the travel
-time on arc $(i,j)$
+- Assume travel time $\tau_{ij}$ is a stochastic variable normally distributed
+  around the mean $t_{ij}$
 
 - Assumptions:
 
-- For simplicity we assume that service time is zero for all customers [no
+  - For simplicity we assume that service time is zero for all customers [no
 problem to ”lift” this assumption]
 
-- We assume that the stochastic variables $\tau_{ij}$ are independent [not very
+  - We assume that the stochastic variables $\tau_{ij}$ are independent [not very
 realistic]
