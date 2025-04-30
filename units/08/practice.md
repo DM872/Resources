@@ -47,6 +47,9 @@ $$
 
 Vehicle capacity 30.
 
+
+(Solution in slides 05-StochVRP.pdf available in ItsLearning)
+
 ## Task 2
 
 Vehicle Routing with Time Windows and Stochastic Travel Times 
@@ -77,7 +80,7 @@ problem to ”lift” this assumption]
   - We assume that the stochastic variables $\tau_{ij}$ are independent [not very
 realistic]
 
-
+(Solution in slides 05-StochVRP.pdf available in ItsLearning)
 
 ## Task 3
 
