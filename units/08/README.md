@@ -8,7 +8,7 @@ Week 17, April 24, 2025
 Week 18, April 30, 2025
 
 - Stochastic Programming for Timetabling
-- Practice on SP
+- Practice on SP (practice.md)
 
 ## References
 
