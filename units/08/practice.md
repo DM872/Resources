@@ -29,6 +29,7 @@ than vehicle capacity
 - Objective: Minimize the expected cost of the solution.
 
 Data:
+
 $$
 \begin{array}{rrr}
 &X& Y &\lambda_i\\
