@@ -75,3 +75,9 @@ problem to ”lift” this assumption]
 
   - We assume that the stochastic variables $\tau_{ij}$ are independent [not very
 realistic]
+
+
+
+# Task 3
+
+[Precision Farming](https://www.linkedin.com/pulse/precision-farming-meinolf-sellmann-e6bwe)
