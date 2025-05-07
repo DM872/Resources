@@ -65,5 +65,4 @@ class Scenarios:
         self.h2 = [2,3,1]
 
 scenarios = Scenarios()
-print("Scenario 1 : h1=",scenarios.h1[0]," h2=",scenarios.h2[0]," probability=",scenarios.probability[0])
 ```
