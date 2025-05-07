@@ -20,7 +20,7 @@ Consider the mixed integer program
 
 $$
 \begin{align*}
-\max\; &4x_1 +5x_2 +2y_1 −7y_2 +5y_3 \\
+\max\\; &4x_1 +5x_2 +2y_1 −7y_2 +5y_3 \\
 &3x_1 +4x_2 +2y_1 −2y_2 +3y_3\leq 10\\
 &\vec x\leq 3,\; \vec x\in \mathbb{Z}^2_+,\; \vec y\leq 2,\; \vec y\in \mathbb{R}^3_+. 
 \end{align*}
@@ -38,6 +38,7 @@ Without starting again from scratch:
 ### Task 3
 
 Consider the following problem:
+
 $$
 \begin{align*}
   \min~&2x + \pi_1(y_{11} + 3y_{21}) + \pi_2(y_{12} + 3y_{22})+ \pi_3(y_{13} + 3y_{23})\\
@@ -47,7 +48,7 @@ $$
 \end{align*}
 $$
 
-$(h_1,h_2)\in \Xi=\big\{(1,2),(1,3),(2,1)\big\}$ and
+$(h_1,h_2)\in \Xi=\left\{(1,2),(1,3),(2,1)\right\}$ and
 $\pi_1=\pi_2=\pi_3=\frac{1}{3}$.
 
 Solve the problem using the Benders' reformulation (L-Shaped method) and compare
