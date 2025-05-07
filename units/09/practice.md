@@ -41,15 +41,15 @@ Consider the following problem:
 
 $$
 \begin{align*}
-  \min~&2x + \pi_1(y_{11} + 3y_{21}) + \pi_2(y_{12} + 3y_{22})+ \pi_3(y_{13} + 3y_{23})\\
+  \min~&2x + p_1(y_{11} + 3y_{21}) + p_2(y_{12} + 3y_{22})+ p_3(y_{13} + 3y_{23})\\
   \text{s.t.}~&2y_{1s}+y_{2s}+x = h_{1s} & s=1,\ldots,3\\
        &-y_{1s}+y_{2s} +4x \geq h_{2s}& s=1,\ldots,3\\
        &y_{1s},y_{2s}\geq 0, s=1,\ldots,3,x\geq 0
 \end{align*}
 $$
 
-$(h_1,h_2)\in \Xi=\{(1,2),(1,3),(2,1)\}$ and
-$\pi_1=\pi_2=\pi_3=\frac{1}{3}$.
+$(h_1,h_2)\in \Xi=\\{(1,2),(1,3),(2,1)\\}$ and
+$p_1=p_2=p_3=\frac{1}{3}$.
 
 Solve the problem using the Benders' reformulation (L-Shaped method) and compare
 its solution to that obtained without decomposing the problem. Use the code
