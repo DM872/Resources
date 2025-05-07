@@ -48,7 +48,7 @@ $$
 \end{align*}
 $$
 
-$(h_1,h_2)\in \Xi=\left\{(1,2),(1,3),(2,1)\right\}$ and
+$(h_1,h_2)\in \Xi=\{(1,2),(1,3),(2,1)\}$ and
 $\pi_1=\pi_2=\pi_3=\frac{1}{3}$.
 
 Solve the problem using the Benders' reformulation (L-Shaped method) and compare
