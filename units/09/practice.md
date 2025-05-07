@@ -16,7 +16,7 @@ $$
 
 ### Task 2
 
-Consider the mixed integer program 
+Consider the mixed integer program
 
 $$
 \begin{align*}
@@ -31,5 +31,6 @@ avaialble from the git repository.
 
 After solving it, you are informed that the $y$ variables should also be integer.
 Without starting again from scratch:
-	i. Solve the new problem using a basic branch and bound algorithm (Section 12.5.1)
-	ii. Solve using no-good cuts (Section 12.5.2).
+
+i. Solve the new problem using a basic branch and bound algorithm (Section 12.5.1)
+ii. Solve using no-good cuts (Section 12.5.2).
