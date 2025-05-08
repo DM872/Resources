@@ -7,7 +7,7 @@ Week 19, May 6, 2025
 
 Week 19, May 8, 2025
 
-- Practice on Benders' Algorithm
+- Practice on Benders' Algorithm. Solutions in `benders_example.ipynb` and `exercise3_lshaped_method.ipynb`.
 
 ## References
 
@@ -20,3 +20,4 @@ Week 19, May 8, 2025
 
 [Z] Zhang, Ray Jian, [Benders Decomposition: An Easy Example](https://youtu.be/vQzpydNOWDY). 2016. Video
 
+[GP] Giovannni Pantuso's [DORS Tutorial](https://pantuso.sites.ku.dk/talks/).
