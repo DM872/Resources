@@ -3,7 +3,7 @@
 ## Task 1
 
 Solve some of the troublesome problems from [KN1] with Gurobi and other solvers
-(soplex, glpsol) and analyze the logs.
+(highs via `scipy.linprog`, cardinal, CuOpt, soplex, glpsol) and analyze the logs.
 
 The
 following linear program provides an example of ill conditioning

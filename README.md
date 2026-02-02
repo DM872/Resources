@@ -6,7 +6,7 @@ This repository contains resources for the course DM872:
 - [itsLearning](https://sdu.itslearning.com/main.aspx?CourseID=47327) (its)
 - Teachers: [Marco Chiarandini](https://imada.sdu.dk/u/march) (MC)
   [Konstantin Pavlikov](https://portal.findresearcher.sdu.dk/en/persons/kop) (KP)
-- [Schedule](https://skemaplan.sdu.dk/N340032101/f26);
+- [Schedule](https://skemaplan.sdu.dk/N340032101/f26); [alternative view](https://imada.sdu.dk/u/march/Timetables/Semesters/F26/html/DM872.html)
 <!--  [alternative view](./schedule.png) -->
 - Assessment:
     - Ordinary exam: two assignments during the course
