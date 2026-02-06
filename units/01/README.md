@@ -1,19 +1,23 @@
 ## Unit 1 (MC) --- Mixed Integer Linear Programming Recap
 
 ***
-Week 6:
-- Course Introduction (slides-intro)
-- Interior Point Methods (slides-affine, HL_sc8_4.pdf, [V, chp 21])
-- LP Practical Guidelines ([KN1] klotz-LP.pdf, slides-klotz-LP.pdf)
-- Sifting ([BGLMS] sifting.pdf)
+Week 6: Linear Programming
+- Course Introduction (00-intro.pdf)
+- LP Practical Guidelines (01-klotz-LP.pdf, klotz-LP.pdf, [KN1])
+- Interior Point Methods: 
+  - affine scaling (02-affine.pdf, HL_sc8_4.pdf, [V, chp 21])
+  - central path method (03-central-path.pdf, [V chp 17,18,19,20])
+- Sifting (04-sifting.pdf, [BGLMS])
+- Farkas (05-fakas.pdf, [A])
+
 - Practice (sheet01.md, tasks 1 and 2, sheet01_sol.ipynb)
 ***
 
-Week 7:
-- Farkas (slides-fakas.pdf, [A])
-- MILP Practical Guidelines ([KN2] klotz-MIP.pdf, slides-klotz-MIP.pdf)
-- Modeling (slides-modeling_2.pdf, [Wi, chp 3, 5])
-- Presolving (slides-preprocessing.pdf, [ABGRW])
+Week 7: Integer Linear Programming
+
+- MILP Practical Guidelines (06-klotz-MIP.pdf, [KN2] klotz-MIP.pdf)
+- Modeling (07-modeling_2.pdf, [Wi, chp 3, 5])
+- Presolving (08-preprocessing.pdf, [ABGRW])
 - Practice (sheet01, task 3, sheet01_t3_sol.ipynb) 
 ***
 
