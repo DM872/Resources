@@ -7,6 +7,9 @@ Week 6: Linear Programming
 - Interior Point Methods: 
   - affine scaling (02-affine.pdf, HL_sc8_4.pdf, [V, chp 21])
   - central path method (03-central-path.pdf, [V chp 17,18,19,20])
+- [PDHG](https://odlgroup.github.io/odl/math/solvers/nonsmooth/pdhg.html) for LP = PDLP (currently implemented in
+  [OR-Tools](https://research.google/blog/scaling-up-linear-programming-with-pdlp/),
+  [Gurobi](https://www.gurobi.com/resources/gurobi-teams-with-nvidia-to-advance-first-order-methods-for-large-scale-optimization/), [Nvidia cuOpt](https://www.nvidia.com/en-us/ai-data-science/products/cuopt/))
 - Sifting (04-sifting.pdf, [BGLMS])
 - Farkas (05-fakas.pdf, [A])
 
