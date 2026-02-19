@@ -38,7 +38,7 @@ def ATSP(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_lim)
     #-------------------------------------------------------------------------------------------------------------------
     def complete_callback(model, where):
         #DFJ_callback(model, where)
-        #subtour_elimination_lazy_callback(model, where)
+        subtour_elimination_lazy_callback(model, where)
     #-------------------------------------------------------------------------------------------------------------------
     m = Model("Optimize")
     x = {}
@@ -55,7 +55,9 @@ def ATSP(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_lim)
     m.setObjective(obj, GRB.MINIMIZE)
     # DL
     # GG m.
-    add_root_node_DFJ_cuts = True
+    m.optimize()
+
+    add_root_node_DFJ_cuts = False
     if add_root_node_DFJ_cuts:
         m.optimize()
         x_values = {(i, j): x[i, j].x for (i, j) in x.keys()}
@@ -79,23 +81,23 @@ def ATSP(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_lim)
         m.setParam('MIPGapAbs', 0.99) # means that the absolute gap might be up to 1 withoug violating optimality conditions
         m.setParam('Timelimit', time_lim)
         # no callback
-        #m.optimize()
+        m.optimize()
         # with callback
-        m.optimize(complete_callback)
+        #m.optimize(complete_callback)
 #-----------------------------------------------------------------------------------------------------------------------
 def main_ATSP():
     relax = False
     Asymmetry_Flag = True
     time_lim = 3600
-    #ATSP_DFJ('realfiles', 'dc112', Asymmetry_Flag, 'VECTOR', 112, relax, time_lim)
-    ATSP_DFJ('realfiles', 'dc126', Asymmetry_Flag, 'VECTOR', 126, relax, time_lim)
-    #ATSP_DFJ('realfiles', 'dc134', Asymmetry_Flag, 'VECTOR', 134, relax, time_lim)
-    #ATSP_DFJ('realfiles', 'dc176', Asymmetry_Flag, 'VECTOR', 176, relax, time_lim)
-    #ATSP_DFJ('realfiles', 'dc188', Asymmetry_Flag, 'VECTOR', 188, relax, time_lim)
-    #ATSP_DFJ('realfiles', 'dc563', Asymmetry_Flag, 'VECTOR', 563, relax, time_lim)
-    #ATSP_DFJ('realfiles', 'dc849', Asymmetry_Flag, 'VECTOR', 849, relax, time_lim)
-    #ATSP_DFJ('realfiles', 'dc895', Asymmetry_Flag, 'VECTOR', 895, relax, time_lim)
-    #ATSP_DFJ('realfiles', 'dc932', Asymmetry_Flag, 'VECTOR', 932, relax, time_lim)
+    #ATSP('ATSP_instances', 'dc112', Asymmetry_Flag, 'VECTOR', 112, relax, time_lim)
+    ATSP('ATSP_instances', 'dc126', Asymmetry_Flag, 'VECTOR', 126, relax, time_lim)
+    #ATSP('ATSP_instances', 'dc134', Asymmetry_Flag, 'VECTOR', 134, relax, time_lim)
+    #ATSP('ATSP_instances', 'dc176', Asymmetry_Flag, 'VECTOR', 176, relax, time_lim)
+    #ATSP('ATSP_instances', 'dc188', Asymmetry_Flag, 'VECTOR', 188, relax, time_lim)
+    #TSP('ATSP_instances', 'dc563', Asymmetry_Flag, 'VECTOR', 563, relax, time_lim)
+    #ATSP('ATSP_instances', 'dc849', Asymmetry_Flag, 'VECTOR', 849, relax, time_lim)
+    #ATSP('ATSP_instances', 'dc895', Asymmetry_Flag, 'VECTOR', 895, relax, time_lim)
+    #ATSP('ATSP_instances', 'dc932', Asymmetry_Flag, 'VECTOR', 932, relax, time_lim)
 #-----------------------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":
     main_ATSP()
