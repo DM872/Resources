@@ -16,7 +16,7 @@ def ATSP(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_lim)
     d = load_instance(folder, filename, n, Asymmetry_Flag, data_format_flag)
     #-------------------------------------------------------------------------------------------------------------------
     def subtour_elimination_lazy_callback(model, where):
-        if where == GRB.Callback.MIPSOL:
+        if where == GRB.Callback.MIPSOL: # incumbent callback 
             x_values = model.cbGetSolution(model._x)
             subtours = find_subtours(x_values)
             if len(subtours) > 1:
@@ -28,10 +28,10 @@ def ATSP(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_lim)
                         model.cbLazy(quicksum(model._x[i, j] for i in S_bar for j in S_bar if i != j) <= len(S_bar) - 1)
     #-------------------------------------------------------------------------------------------------------------------
     def DFJ_callback(model, where):
-        if where == GRB.Callback.MIPNODE:
+        if where == GRB.Callback.MIPNODE: # fractional node 
             # add cuts at every bnb node
-            if model.cbGet(GRB.callback.MIPNODE_NODCNT) % 3 == 0:
-                if model.cbGet(GRB.Callback.MIPNODE_STATUS) == GRB.OPTIMAL:
+            if model.cbGet(GRB.callback.MIPNODE_NODCNT) % 3 == 0: # frequency control
+                if model.cbGet(GRB.Callback.MIPNODE_STATUS) == GRB.OPTIMAL: # only search for cuts in feasible nodes
                     x_values = model.cbGetNodeRel(model._x)
 
                     model.cbCut(0, GRB.LESS_EQUAL, 0)
@@ -60,10 +60,14 @@ def ATSP(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_lim)
     add_root_node_DFJ_cuts = False
     if add_root_node_DFJ_cuts:
         m.optimize()
-        x_values = {(i, j): x[i, j].x for (i, j) in x.keys()}
         #print(x_values[(0, 1)])
-        # ....
-        add_root_node_DFJ_cuts = False
+        # separate_cuts = True
+        # while separate_cuts
+        #     x_values = {(i, j): x[i, j].x for (i, j) in x.keys()}
+        #     .....
+        #     number_of_cuts imposed 
+        #     if number_of_cuts = 0:
+        #         separate_cuts = False
 
     if not relax:
         # set up the MILP problem
