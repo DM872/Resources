@@ -48,10 +48,10 @@ def SCVRP_2CF(mode, folder, filename, n, V, Q, opt_obj, relax, add_cuts, warm_st
     m.setParam('OutputFlag', False)
     m.optimize()
     print('Initial bound ', np.round(m.objval, 2))
-    need_to_find_cuts = False
+    need_to_find_RCI_cuts = False
     cuts_count = 0
-    if need_to_find_cuts:
-        while need_to_find_cuts:
+    if need_to_find_RCI_cuts:
+        while need_to_find_RCI_cuts:
             m_separation = Model("Optimize")
             m_separation.setParam('OutputFlag', False)
 
@@ -64,7 +64,7 @@ def SCVRP_2CF(mode, folder, filename, n, V, Q, opt_obj, relax, add_cuts, warm_st
                 m.optimize()
                 print('New bound: ', m.objval)
             else:
-                need_to_find_cuts = False
+                need_to_find_RCI_cuts = False
         cvrp_lower_bound = m.objval
         print(filename, 'Q='+str(Q), round(cvrp_lower_bound, 2))
         print('2CF-CVRP ' + mode + ' LP time: ', round(time() - start_time, 1), ' sec. ', cuts_count, ' cuts generated')
