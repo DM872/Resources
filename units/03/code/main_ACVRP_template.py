@@ -54,13 +54,13 @@ def ACVRP_compact_formulation(folder, filename, Q, n, relax, time_lim):
     # G-G m constraints instead
 
     #m.setParam('OutputFlag', False)
-    add_root_node_DFJ_cuts = False
-    if add_root_node_DFJ_cuts:
+    add_root_node_RCI_cuts = False
+    if add_root_node_RCI_cuts:
         m.optimize()
         x_values = {(i, j): x[i, j].x for (i, j) in x.keys()}
         #print(x_values[(0, 1)])
         # ....
-        add_root_node_DFJ_cuts = False
+        add_root_node_RCI_cuts = False
     if not relax:
         # set up the MILP problem
         for (i, j) in x.keys():
