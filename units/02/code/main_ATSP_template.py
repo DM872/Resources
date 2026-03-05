@@ -13,7 +13,7 @@ def find_subtours(x_values):
     return returned_subtours
 #-----------------------------------------------------------------------------------------------------------------------
 def ATSP(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_lim):
-    d = load_instance(folder, filename, n, Asymmetry_Flag, data_format_flag)
+    c = load_instance(folder, filename, n, Asymmetry_Flag, data_format_flag)
     #-------------------------------------------------------------------------------------------------------------------
     def subtour_elimination_lazy_callback(model, where):
         if where == GRB.Callback.MIPSOL: # incumbent callback 
@@ -50,7 +50,7 @@ def ATSP(folder, filename, Asymmetry_Flag, data_format_flag, n, relax, time_lim)
         m.addLConstr(quicksum(x[i, j] for j in range(0, n) if i != j), GRB.EQUAL, 1)
         m.addLConstr(quicksum(x[j, i] for j in range(0, n) if i != j), GRB.EQUAL, 1)
 
-    obj = quicksum(d[i, j] * x[i, j] for i in range(0, n) for j in range(0, n) if i != j)
+    obj = quicksum(c[i, j] * x[i, j] for i in range(0, n) for j in range(0, n) if i != j)
     #m.setParam('OutputFlag', False)
     m.setObjective(obj, GRB.MINIMIZE)
     # DL
