@@ -93,9 +93,9 @@ def main_A_SCVRP():
     warm_start = ''
     add_cuts = ''
     mode = 'm'
-    #SCVRP_2CF(mode, 'A', 'A-n32-k5', 31, 5, 100, 784, relax, add_cuts, warm_start, timelim)
-    SCVRP_2CF(mode, 'A', 'A-n33-k5', 32, 5, 100, 661, relax, add_cuts, warm_start, timelim)
-    #SCVRP_2CF(mode, 'A', 'A-n80-k10', 79, 10, 100, 1763, relax, add_cuts, warm_start, timelim)
+    SCVRP_2CF(mode, 'CVRP_instances', 'A-n33-k5', 32, 5, 100, 661, relax, add_cuts, warm_start, timelim)
+    #SCVRP_2CF(mode, 'CVRP_instances', 'A-n55-k9', 54, 9, 100, 1073, relax, add_cuts, warm_start, timelim)
+    #SCVRP_2CF(mode, 'CVRP_instances', 'A-n80-k10', 79, 10, 100, 1763, relax, add_cuts, warm_start, timelim)
 #-----------------------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":
     main_A_SCVRP()
