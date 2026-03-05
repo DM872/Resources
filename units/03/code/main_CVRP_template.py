@@ -6,7 +6,7 @@ from time import *
 from CVRP_utilities import *
 #-----------------------------------------------------------------------------------------------------------------------
 def SCVRP_2CF(mode, folder, filename, n, V, Q, opt_obj, relax, add_cuts, warm_start, timelim):
-    d, demand = load_instance(folder, filename, n)
+    c, demand = load_instance(folder, filename, n)
     start_time = time()
     m = Model("Optimize")
 
@@ -36,7 +36,7 @@ def SCVRP_2CF(mode, folder, filename, n, V, Q, opt_obj, relax, add_cuts, warm_st
     for i in range(1, n + 1):
         m.addLConstr(quicksum(x[min(i, j), max(i, j)] for j in range(0, n + 1) if i != j), GRB.EQUAL, 2, name='degree_of_'+str(i))
 
-    m.setObjective(quicksum(d[i, j] * x[i, j] for i in range(0, n + 1) for j in range(i + 1, n + 1)), GRB.MINIMIZE)
+    m.setObjective(quicksum(c[i, j] * x[i, j] for i in range(0, n + 1) for j in range(i + 1, n + 1)), GRB.MINIMIZE)
 
     # 2CF-CVRP formulation follows below ....
 
