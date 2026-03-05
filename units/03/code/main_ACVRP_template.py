@@ -3,7 +3,7 @@ from CVRP_utilities import *
 from gurobipy import *
 #-----------------------------------------------------------------------------------------------------------------------
 def ACVRP_compact_formulation(folder, filename, Q, n, relax, time_lim):
-    d, demand = load_instance(folder, filename, n)
+    c, demand = load_instance(folder, filename, n)
     #-------------------------------------------------------------------------------------------------------------------
     def RCI_fractional_node_callback(model, where):
         if where == GRB.Callback.MIPNODE:
@@ -39,7 +39,7 @@ def ACVRP_compact_formulation(folder, filename, Q, n, relax, time_lim):
         m.addLConstr(quicksum(x[i, j] for j in C_0 if j != i), GRB.EQUAL, 1)
         m.addLConstr(quicksum(x[j, i] for j in C_0 if j != i), GRB.EQUAL, 1)
 
-    obj = quicksum(d[i, j] * x[i, j] for i in C_0 for j in C_0 if i != j)
+    obj = quicksum(c[i, j] * x[i, j] for i in C_0 for j in C_0 if i != j)
     m.setObjective(obj, GRB.MINIMIZE)
 
     # D-L ACVRP constraints
