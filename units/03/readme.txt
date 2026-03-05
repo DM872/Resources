@@ -1,6 +1,6 @@
 Exercise session 05.03.2026
 
-1. Work with the main_CVRP_template.py to model the symmetric VRP
+1. Work with the main_CVRP_template.py to model the symmetric VRP (CVRP)
 2. Implement 2CF_CVRP or 2CF_CVRP m. formulation of the CVRP
 3. Implement the separation routine of RC inequalities at the root node of the implemented CVRP formulation
 4. Separate and impose all violated RC inequalities at the root node of the MILP formulation and note the improved performance of the formulation
