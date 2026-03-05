@@ -1,3 +1,5 @@
+CVRP instances can be found here: https://galgos.inf.puc-rio.br/cvrplib/index.php/en/instances
+
 Exercise session 05.03.2026
 
 1. Work with the main_CVRP_template.py to model the symmetric VRP (CVRP)
