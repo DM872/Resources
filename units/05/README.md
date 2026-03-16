@@ -8,8 +8,9 @@ Week 12
 - Dual Bounds in Column Generation (slides, [Wo ch 11 in LMS], [LD])
 - Extensive Formulation for CVRP and Branch and Price solution (slides in
   ItsLearning, [Fe], [DLDG]) 
-- Practice on CG in `practice/`. Solutions in `delcolgen.md` and in files
-  `compact.py`, `extensive.py`, `extensive_incremental.py` in `code/`.
+- Practice on CG in `practice/`. Solutions after the exercise class in
+  `delcolgen.md` and in `code/` files: `compact.py`, `extensive.py`,
+  `extensive_incremental.py`.
 
 ***
 
