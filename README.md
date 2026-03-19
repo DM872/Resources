@@ -33,5 +33,5 @@ This repository contains resources for the course DM872:
 
 ## Assignments
 
-- [asg 1](./assignments/asg1/asg1.pdf)
+- [asg 1](./assignments/asg1/dm872-asg1.pdf)
 - asg 2 expected to appear in May.
