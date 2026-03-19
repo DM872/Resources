@@ -29,3 +29,9 @@ This repository contains resources for the course DM872:
 |   10 | Fairness                                  | MC      |       |
 |   11 | Multiobjective                            | MC      |       |
 |   12 | Math Prog in Machine Learning             | MC      |       |
+
+
+## Assignments
+
+- [asg 1](./assignments/asg1/asg1.pdf)
+- asg 2 expected to appear in May.

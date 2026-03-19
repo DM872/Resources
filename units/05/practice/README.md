@@ -19,7 +19,7 @@ $$
 \max &\sum_{i=1}^m\sum_{j=1}^n c_{ij}x_{ij}\\
 &\sum_{j=1}^n x_{ij}= 1 \qquad  i = 1,\ldots, m\\
 &\sum_{i=1}^m a_{ij} x_{ij}\leq  b_j \qquad  j = 1,\ldots,n\\
-&x \in \{0, 1\}^{mn}.
+&x \in \\{0, 1\\}^{mn}.
 \end{align}
 $$
 
@@ -28,7 +28,7 @@ and
 
 $$m=3,n=2$$
 
-$$[a_{ij}]=\begin{bmatrix}5&3\\\\3&8\\\\2&10\end{bmatrix},\,[c_{ij}]=\begin{bmatrix}20&16\\\\15&19\\\\19&14\end{bmatrix},\,
+$$[a_{ij}]=\begin{bmatrix}5&3\\\\3&8\\\\2&10\end{bmatrix},\\,[c_{ij}]=\begin{bmatrix}20&16\\\\15&19\\\\19&14\end{bmatrix},\\,
 [b_j]=\begin{bmatrix}6\\\\21\end{bmatrix}
 $$
 
@@ -140,3 +140,11 @@ Implementations:
 - pyscipopt provides support by defining a class inherited from Pricer. The
   script test_pricing.py from the pyscipopt github repository shows how to do
   this.
+
+## Task 5 
+
+Show that the dual bound that can be derived from the solution of the restricted
+linear relaxation of the master problem corresponds to the dual bound that the
+Lagrangian relaxation can provide when using as guess for the multipliers the
+values of the dual variables of the dual of the restricted linear relaxation of
+the master problem.
