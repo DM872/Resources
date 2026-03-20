@@ -104,8 +104,8 @@ in Python in our git repository:
 To add columns to your model without resolving from
 scratch see:
 
-- In `gurobipy`, the last example from this doumentation page:
-  [Modify a model (gurobi.com)](https://www.gurobi.com/documentation/10.0/examples/modify_a_model.html)
+- In `gurobipy`, the last example (feasopt example) from this doumentation page:
+  [Modify a model (gurobi.com)](https://docs.gurobi.com/projects/examples/en/current/overview/modification.html)
 
 - In Python MIP see documentation for `Column` and `add_var`.
 
