@@ -38,3 +38,11 @@ Week 15:
 
 [DLDG] J Desrosiers, M Lübbecke, G Desaulniers, JB Gauthier, 2024.
   [Branch-and-Price](https://www.gerad.ca/en/papers/G-2024-36), Les Cahiers du GERAD
+
+
+[SBG] Salani, M., Basso, S., & Giuffrida, V. (2024). [PathWyse: a flexible,
+open-source library for the resource constrained shortest path
+problem](https://doi.org/10.1080/10556788.2023.2296978).  Optimization Methods
+and Software, 1–23. [Git Repo](https://github.com/pathwyse/pathwyse).
+
+
