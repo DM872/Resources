@@ -38,4 +38,4 @@ Week 12
 
 - [DLDG] J Desrosiers, M Lübbecke, G Desaulniers, JB Gauthier, 2024.
   [Branch-and-Price](https://www.gerad.ca/en/papers/G-2024-36), Les Cahiers du GERAD
-
+  Also as [book](http://dx.doi.org/10.1007/978-3-031-96917-1) published by Springer Nature Switzerland in 2026.
