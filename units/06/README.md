@@ -39,10 +39,23 @@ Week 15:
 [DLDG] J Desrosiers, M Lübbecke, G Desaulniers, JB Gauthier, 2024.
   [Branch-and-Price](https://www.gerad.ca/en/papers/G-2024-36), Les Cahiers du GERAD
 
-
 [SBG] Salani, M., Basso, S., & Giuffrida, V. (2024). [PathWyse: a flexible,
 open-source library for the resource constrained shortest path
 problem](https://doi.org/10.1080/10556788.2023.2296978).  Optimization Methods
 and Software, 1–23. [Git Repo](https://github.com/pathwyse/pathwyse).
+
+[PS] Petersen, Bjørn / Spoorendonk, Simon A parallel pull labelling algorithm
+for the resource constrained shortest path problem, 2025.
+[arXiv:2511.01397](https://arxiv.org/abs/2511.01397)
+
+[TS] Torres Sanchez, David, [cspy: A Python package with a collection of
+algorithms for the (Resource) Constrained Shortest Path
+problem](https://github.com/torressa/cspy)
+2020. Journal of Open Source Software, Vol. 5, No. 49 The Open Journal p. 1655
+
+
+
+
+ 
 
 
