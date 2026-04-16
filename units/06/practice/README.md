@@ -1,4 +1,4 @@
-# Practice on Multi Depot Vehicle Scheduling
+# Task 1. Practice on Multi Depot Vehicle Scheduling
 
 In the directory `MDVS` you find the files `sample.inp` and `m4n500s0.inp` that
 contain data about timetabled trips housed in different depots.  The name of the
@@ -35,11 +35,11 @@ It then
 contains the code that implements the multi-depot model (24)–(28) of
 slide 35.
 
-## Task 1
+## Subtask 1
 
 Inspect the python file `mdvs-template.py` and make sure you understand it.
 
-## Task 2
+## Subtask 2
 
 Run the script `mdvs-template.py` on the small instance `m4n500s0.inp` and observe the output produced. Explain what happened and fill in the table below:
 
@@ -64,7 +64,7 @@ model.addVar(lb=0.0, ub=1.0, vtype="C")
 ```
 
 
-## Task 3
+## Subtask 3
 
 In the table we used the linear relaxation as lower bound. Another
 convenient way to obtain a lower bound is by relaxing some constraints
@@ -77,7 +77,7 @@ left. Is this lower bound better or worse than the linear relaxation
 lower bound?  
 
 
-## Task 4
+## Subtask 4
 
 What is a lower bound on the sum of the capacities of the
 depots such that a feasible solution is guaranteed to exist? Implement
@@ -92,7 +92,7 @@ slide 37. Write a python function that solves $\phi(\lambda)$, that is a functio
 that solves a Min Cost Flow problem with the arc costs defined as a
 function of the h-th depot and of $\lambda$ as in (37) in slide 40.
 
-## Task 5
+## Subtask 5
 
 Once you a wrote such a script, use it to solve the subproblems and to
 compute a lower bound for the following values of vector $\lambda$:
@@ -109,7 +109,7 @@ Are they all valid lower bounds? Can you devise a procedure to find the
 values for $\lambda$ that give the greatest possible lower bound?
 
 
-## Task 6
+## Subtask 6
 
 
 Using the preimplemented skeleton available in
@@ -118,7 +118,7 @@ by developing a basic subgradient algorithm (see Algorithm 1 in slide
 42).
 
 
-## Task 7
+## Subtask 7
 
 Implement a greedy heuristic that starting from the optimal continuous
 relaxation, builds a feasible solution (slide 43).  Tips: use the
@@ -127,7 +127,7 @@ with the missing parts. You will need a model used earlier in this
 exercise.
 
 
-## Task 8
+## Subtask 8
 
 [Optional] Using the same data, try to develop a basic column generation
 algorithm, using the Set Partitioning formulation based on path
@@ -139,3 +139,7 @@ cover a single trip.  Once the algorithm stops (there are no more
 negative reduced cost path), you can solve an Integer Linear problem
 defined only on the set of generated columns. How large is the gap from
 the LP solution and the integer solution?
+
+
+
+# Task 2. Resource Constrained Shortest Path Problem
