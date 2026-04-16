@@ -19,7 +19,7 @@ Week 15:
 
 [CG] P. Carraresi and G. Gallo. [Network models for vehicle and crew
   scheduling](http://dx.doi.org/10.1016/0377-2217(84)90068-7). European
-  Journal of Operational Research , 1984, 16(2) , 139 - 151
+  Journal of Operational Research, 1984, 16(2) , 139 - 151
 
 [SGSK] I. Steinzen, V. Gintner, L. Suhl and N. Kliewer. [A Time-Space
   Network Approach for the Integrated Vehicle- and Crew-Scheduling
