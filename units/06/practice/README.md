@@ -144,31 +144,20 @@ the LP solution and the integer solution?
 
 # Task 2. Resource Constrained Shortest Path Problem
 
+Carry out manually the labelling algorithm from the slides on the instance of
+resource constrained shortest path problem given in the picture:
 
-```{python}
-from networkx import DiGraph
-from numpy import array
+<div style="text-align:center;">
+<img src="./rcsp.png" alt="example" width="450">
+</div>
 
-max_res, min_res = [4, 20], [1, 0]
-# Create a DiGraph
-G = DiGraph(directed=True, n_res=2)
-G.add_edge("Source", "A", res_cost=[1, 2], weight=0)
-G.add_edge("A", "B", res_cost=[1, 0.3], weight=0)
-G.add_edge("A", "C", res_cost=[1, 0.1], weight=0)
-G.add_edge("B", "C", res_cost=[1, 3], weight=-10)
-G.add_edge("B", "Sink", res_cost=[1, 2], weight=10)
-G.add_edge("C", "Sink", res_cost=[1, 10], weight=0)
-```
+In the figure the resource is time and there are constraints at each node that
+the time must be within the given interval. In case of early arrivals, one must
+wait the opening of the time window for departing.
 
+In particular, report the labels in the open set and those in the useful set at
+any stage of the algorithm.  Which is the optimal path?
 
-
-```{python}
-from cspy import BiDirectional
-# init algorithm
-bidirec = BiDirectional(G, max_res, min_res)
-
-# Call and query attributes
-bidirec.run()
-print(bidirec.path)
-print(bidirec.total_cost)
-print(bidirec.consumed_resources)
+You find the implementation in Python in the script `rcsp.py`. Use the
+implementation solve the problem with the library
+[cspy](https://github.com/torressa/cspy).
