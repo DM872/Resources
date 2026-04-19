@@ -143,3 +143,32 @@ the LP solution and the integer solution?
 
 
 # Task 2. Resource Constrained Shortest Path Problem
+
+
+```{python}
+from networkx import DiGraph
+from numpy import array
+
+max_res, min_res = [4, 20], [1, 0]
+# Create a DiGraph
+G = DiGraph(directed=True, n_res=2)
+G.add_edge("Source", "A", res_cost=[1, 2], weight=0)
+G.add_edge("A", "B", res_cost=[1, 0.3], weight=0)
+G.add_edge("A", "C", res_cost=[1, 0.1], weight=0)
+G.add_edge("B", "C", res_cost=[1, 3], weight=-10)
+G.add_edge("B", "Sink", res_cost=[1, 2], weight=10)
+G.add_edge("C", "Sink", res_cost=[1, 10], weight=0)
+```
+
+
+
+```{python}
+from cspy import BiDirectional
+# init algorithm
+bidirec = BiDirectional(G, max_res, min_res)
+
+# Call and query attributes
+bidirec.run()
+print(bidirec.path)
+print(bidirec.total_cost)
+print(bidirec.consumed_resources)
