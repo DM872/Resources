@@ -148,7 +148,7 @@ Carry out manually the labelling algorithm from the slides on the instance of
 resource constrained shortest path problem given in the picture:
 
 <div style="text-align:center;">
-<img src="./rcsp.png" alt="example" width="450">
+<img src="./rcsp.png" alt="example" width="700">
 </div>
 
 In the figure the resource is time and there are constraints at each node that
@@ -156,7 +156,7 @@ the time must be within the given interval. In case of early arrivals, one must
 wait the opening of the time window for departing.
 
 In particular, report the labels in the open set and those in the useful set at
-any stage of the algorithm.  Which is the optimal path?
+any stage of the algorithm.  Which is the optimal path from S to T?
 
 You find the implementation in Python in the script `rcsp.py`. Use the
 implementation solve the problem with the library
