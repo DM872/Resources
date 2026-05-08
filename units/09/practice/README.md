@@ -48,7 +48,7 @@ $$
 \end{align*}
 $$
 
-$(h_1,h_2)\in \Xi=\\{(1,2),(1,3),(2,1)\\}$ and
+$(\vec h_1, \vec h_2)\in \Xi=\\{(1,2),(1,3),(2,1)\\}$ and
 $p_1=p_2=p_3=\frac{1}{3}$.
 
 Solve the problem using the Benders' reformulation (L-Shaped method) and compare
