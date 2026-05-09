@@ -27,7 +27,7 @@ $$
 $$
 
 Solve it using Benders’ algorithm. A template for the implementation is
-avaialble in the `code` directory.
+available in the `code` directory.
 
 After solving it, you are informed that the $y$ variables should also be integer.
 Without starting again from scratch:
